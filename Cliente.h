@@ -1,12 +1,18 @@
+#pragma once
 #include <iostream>
+using namespace std;
+#include <string>
 
 class Cliente
 {
 private:
-    std::string nombreCliente;
-    std::string rutCliente;
+    string nombre;
+    string rut;
 
 public:
-    Cliente(std::string nombreCliente, std::string rutCliente);
-    ~Cliente();
+    Cliente(const string &nombre, const string &rut);
+    string getNombre() const;
+    string getRut() const;
+    void setNombre(const string &nombre);
+    void setRut(const string &rut);
 };
