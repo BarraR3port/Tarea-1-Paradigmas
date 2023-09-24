@@ -1,4 +1,5 @@
 #include <iostream>
+#include <limits>
 #include <vector>
 #include "Cliente.h"
 #include "Vehiculo.h"
@@ -90,53 +91,202 @@ void mostrarVehiculos()
 
 void menu(void)
 {
-    int opcion = -1;
-    while (opcion != 0)
+    int opcion = 0;
+
+    while (opcion != 5)
     {
-        if (cliente == NULL)
-        {
-            string nombreCliente, rutCliente;
-            cout << "No hay clientes registrados" << endl;
-            cout << "-------------------" << endl;
-            cout << "Ingresa el nombre del cliente" << endl;
-            cin >> nombreCliente;
-            cout << "Ingresa el rut del cliente" << endl;
-            cin >> rutCliente;
-            cliente = new Cliente(nombreCliente, rutCliente);
-            cout << "-------------------" << endl;
-            cout << "Cliente Actual: " << cliente->getRut() << endl;
-        }
-        else
-        {
-            cout << "-------------------" << endl;
-            cout << "Cliente Actual: " << endl;
-        }
-        cout << "Nombre: " << cliente->getNombre() << endl;
-        cout << "Rut: " << cliente->getRut() << endl;
-        cout << "-------------------" << endl;
-        cout << "[Menu]" << endl;
-        cout << "1) Agregar automovil" << endl;
-        cout << "2) Agregar moto" << endl;
-        cout << "3) Agregar camioneta" << endl;
-        cout << "4) Mostrar Vehiculos" << endl;
-        cout << "0) Salir" << endl;
-        cout << "-------------------" << endl;
+        cout << "1. Ventas de vehiculos a clientes" << endl;
+        cout << "2. Promedio de ventas" << endl;
+        cout << "3. Cantidad de vehiculos comprados" << endl;
+        cout << "4. Ventas de vehiculos" << endl;
+        cout << "5. Salir" << endl;
+        cout << "Seleccione una opcion : ";
         cin >> opcion;
-        if (opcion == 0)
+        // Verificar si la entrada es válida
+        if (cin.fail())
         {
-            cout << "Saliste correctamente del programa" << endl;
+            cin.clear();
+            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            cout << "Debe ingresar un numero entero. Intente de nuevo." << endl;
+            continue;
         }
-        else if (opcion == 1)
+
+        if (opcion == 1)
         {
-            agregarAuto();
+            int opcion_venta = -1;
+            while (opcion_venta != 0)
+            {
+                if (cliente == NULL)
+                {
+                    string nombreCliente, rutCliente;
+                    cout << "No hay clientes registrados" << endl;
+                    cout << "-------------------" << endl;
+                    cout << "Ingresa el nombre del cliente" << endl;
+                    cin >> nombreCliente;
+                    cout << "Ingresa el rut del cliente" << endl;
+                    cin >> rutCliente;
+                    cliente = new Cliente(nombreCliente, rutCliente);
+                    cout << "-------------------" << endl;
+                    cout << "Cliente Actual: " << cliente->getRut() << endl;
+                }
+                else
+                {
+                    cout << "-------------------" << endl;
+                    cout << "Cliente Actual: " << endl;
+                }
+                cout << "Nombre: " << cliente->getNombre() << endl;
+                cout << "Rut: " << cliente->getRut() << endl;
+                cout << "-------------------" << endl;
+                cout << "[Menu]" << endl;
+                cout << "1) Agregar automovil" << endl;
+                cout << "2) Agregar moto" << endl;
+                cout << "3) Agregar camioneta" << endl;
+                cout << "4) Mostrar Vehiculos" << endl;
+                cout << "0) Salir" << endl;
+                cout << "-------------------" << endl;
+                cin >> opcion_venta;
+                if (opcion_venta == 0)
+                {
+                    cout << "Saliste correctamente del programa" << endl;
+                }
+                else if (opcion_venta == 1)
+                {
+                    agregarAuto();
+                }
+                else if (opcion_venta == 4)
+                {
+                    mostrarVehiculos();
+                }
+                else
+                {
+                    cout << "Opcion no valida" << endl;
+                }
+            }
+        }
+        else if (opcion == 2)
+        {
+            int op = 0;
+            while (op != 5)
+            {
+                cout << "1. Promedio de venta de autos" << endl;
+                cout << "2. Promedio de venta de motos" << endl;
+                cout << "3. Promedio de venta de camiones" << endl;
+                cout << "4. Promedio de ventas totales" << endl;
+                cout << "5. Volver al menu principal" << endl;
+                cout << "Seleccione una opcion : ";
+                cin >> op;
+
+                if (op == 1)
+                {
+                    cout << "Promedio de venta de autos" << endl;
+                }
+                else if (op == 2)
+                {
+                    cout << "Promedio de venta de motos" << endl;
+                }
+                else if (op == 3)
+                {
+                    cout << "Promedio de venta de camiones" << endl;
+                }
+                else if (op == 4)
+                {
+                    cout << "Promedio de ventas totales" << endl;
+                }
+                else if (op == 5)
+                {
+                    cout << "Volviendo al menu principal." << endl;
+                }
+                else
+                {
+                    cout << "Opcion no valida, ingresa una valida porfavor..." << endl;
+                }
+            }
+        }
+        else if (opcion == 3)
+        {
+            int op = 0;
+            while (op != 5)
+            {
+                cout << "1. Cantidad de autos comprados" << endl;
+                cout << "2. Cantidad de motos compradas" << endl;
+                cout << "3. Cantidad de camiones comprados" << endl;
+                cout << "4. Cantidad de vehiculos comprados" << endl;
+                cout << "5. Volver al menu principal" << endl;
+                cout << "Seleccione una opcion :  ";
+                cin >> op;
+
+                if (op == 1)
+                {
+                    cout << "Cantidad de autos comprados" << endl;
+                }
+                else if (op == 2)
+                {
+                    cout << "Cantidad de motos compradas" << endl;
+                }
+                else if (op == 3)
+                {
+                    cout << "Cantidad de camiones comprados" << endl;
+                }
+                else if (op == 4)
+                {
+                    cout << "Cantidad de vehiculos" << endl;
+                }
+                else if (op == 5)
+                {
+                    cout << "Volviendo al menu principal." << endl;
+                }
+                else
+                {
+                    cout << "Opcion no valida, ingresa una valida porfavor..." << endl;
+                }
+            }
         }
         else if (opcion == 4)
         {
-            mostrarVehiculos();
+            int op = 0;
+            while (op != 5)
+            {
+                cout << "1. Ventas de autos" << endl;
+                cout << "2. Ventas de motos" << endl;
+                cout << "3. Ventas de camiones" << endl;
+                cout << "4. Ventas totales" << endl;
+                cout << "5. Volver al menu principal" << endl;
+                cout << "Seleccione una opcion :  ";
+                cin >> op;
+
+                if (op == 1)
+                {
+                    cout << "Ventas de autos" << endl;
+                }
+                else if (op == 2)
+                {
+                    cout << "Ventas de motos" << endl;
+                }
+                else if (op == 3)
+                {
+                    cout << "Ventas de camiones" << endl;
+                }
+                else if (op == 4)
+                {
+                    cout << "Ventas totales" << endl;
+                }
+                else if (op == 5)
+                {
+                    cout << "Volviendo al menu principal." << endl;
+                }
+                else
+                {
+                    cout << "Opcion no valida, ingresa una valida porfavor..." << endl;
+                }
+            }
+        }
+        else if (opcion == 5)
+        {
+            cout << "Saliendo del programa." << endl;
         }
         else
         {
-            cout << "Opcion no valida" << endl;
+            cout << "Esa opcion no es valida, ingresa una opcion valida....." << endl;
         }
     }
     return;
