@@ -20,15 +20,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9235e974-ddf5-44bc-a64c-1c85b905f7c0" name="Changes" comment="Mejoras en el codigo">
+    <list default="true" id="9235e974-ddf5-44bc-a64c-1c85b905f7c0" name="Changes" comment="Termino de tarea">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vehicles.json" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/vehicles.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tarea.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tarea.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicles.json" beforeDir="false" afterPath="$PROJECT_DIR$/vehicles.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +97,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1695588500197</updated>
-      <workItem from="1695588501229" duration="18036000" />
+      <workItem from="1695588501229" duration="19414000" />
     </task>
     <task id="LOCAL-00001" summary="Mejoras en el codigo">
       <option name="closed" value="true" />
@@ -109,7 +107,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695605370226</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Termino de tarea">
+      <option name="closed" value="true" />
+      <created>1695610386981</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695610386981</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +130,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Mejoras en el codigo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mejoras en el codigo" />
+    <MESSAGE value="Termino de tarea" />
+    <option name="LAST_COMMIT_MESSAGE" value="Termino de tarea" />
   </component>
 </project>

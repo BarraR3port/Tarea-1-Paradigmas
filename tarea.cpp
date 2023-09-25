@@ -20,7 +20,6 @@
 #endif
 
 using namespace std;
-/* TODO: SACAR ESTO ANTES DE ENTREGARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR */
 #include "json.hpp"
 
 vector<Venta> ventas;
@@ -28,7 +27,8 @@ vector<Venta> ventas;
 // crea un mapa de clientes por su rut
 map<string, Cliente> clientes;
 
-void clearScreen() {
+void clearScreen()
+{
 #ifdef _WIN32
     system("cls");
 #else
@@ -37,10 +37,12 @@ void clearScreen() {
 #endif
 }
 
-Cliente &getOrCreateCliente(string rut, string nombre) {
+Cliente &getOrCreateCliente(string rut, string nombre)
+{
     // Busca el cliente por su RUT. Si no se encuentra, lo crea y lo añade al mapa.
     auto it = clientes.find(rut);
-    if (it == clientes.end()) {
+    if (it == clientes.end())
+    {
         auto [new_it, inserted] = clientes.emplace(rut, Cliente(nombre, rut));
         return new_it->second;
     }
@@ -49,29 +51,39 @@ Cliente &getOrCreateCliente(string rut, string nombre) {
 
 using json = nlohmann::json;
 
-void readAndCreateVehicles() {
+void readAndCreateVehicles()
+{
     ifstream i("vehicles.json");
-    if (!i.is_open()) {
+    if (!i.is_open())
+    {
         cerr << "No se pudo abrir el archivo vehicles.json" << endl;
         return;
     }
     json j;
     i >> j;
 
-    for (auto &venta: j) {
+    for (auto &venta : j)
+    {
         Cliente &cliente = getOrCreateCliente(venta["cliente"]["rut"], venta["cliente"]["nombre"]);
         string tipo = venta["vehiculo"]["tipo"];
         int numeroMotor = venta["vehiculo"]["numeroMotor"];
         int numeroRuedas = venta["vehiculo"]["numeroRuedas"];
         string tipoCombustible = venta["vehiculo"]["tipoCombustible"];
         TipoCombustible tipoCombustibleParseado;
-        if (tipoCombustible == "Gas") {
+        if (tipoCombustible == "Gas")
+        {
             tipoCombustibleParseado = TipoCombustible::Gas;
-        } else if (tipoCombustible == "Electrico") {
+        }
+        else if (tipoCombustible == "Electrico")
+        {
             tipoCombustibleParseado = TipoCombustible::Electrico;
-        } else if (tipoCombustible == "Gasolina") {
+        }
+        else if (tipoCombustible == "Gasolina")
+        {
             tipoCombustibleParseado = TipoCombustible::Gasolina;
-        } else {
+        }
+        else
+        {
             cout << "Tipo de combustible no valido" << endl;
             return;
         }
@@ -80,19 +92,24 @@ void readAndCreateVehicles() {
         long long precio = venta["vehiculo"]["precio"];
         int anio = venta["vehiculo"]["anio"];
 
-        if (tipo == "Auto") {
+        if (tipo == "Auto")
+        {
             int numeroPuertas = venta["vehiculo"]["numeroPuertas"];
             Auto *vehiculo = new Auto(numeroMotor, numeroRuedas, tipoCombustibleParseado, maxLitros, marca,
                                       precio, anio, numeroPuertas);
             Venta nueva_venta = *new Venta(*vehiculo, cliente, ventas.size());
             ventas.push_back(nueva_venta); // Agregar la nueva venta al vector
-        } else if (tipo == "Camion") {
+        }
+        else if (tipo == "Camion")
+        {
             int numeroPuertas = venta["vehiculo"]["numeroPuertas"];
             Camion *vehiculo = new Camion(numeroMotor, numeroRuedas, tipoCombustibleParseado, maxLitros, marca,
                                           precio, anio, numeroPuertas);
             Venta nueva_venta = *new Venta(*vehiculo, cliente, ventas.size());
             ventas.push_back(nueva_venta); // Agregar la nueva venta al vector
-        } else if (tipo == "Moto") {
+        }
+        else if (tipo == "Moto")
+        {
             Moto *vehiculo = new Moto(numeroMotor, numeroRuedas, tipoCombustibleParseado, maxLitros, marca,
                                       precio, anio);
             Venta nueva_venta = *new Venta(*vehiculo, cliente, ventas.size());
@@ -101,69 +118,112 @@ void readAndCreateVehicles() {
     }
 }
 
-int precioBaseAuto(const string &marca) {
+int precioBaseAuto(const string &marca)
+{
 
-    if (marca == "Toyota") {
+    if (marca == "Toyota")
+    {
         return 19000000;
-    } else if (marca == "Hyundai") {
+    }
+    else if (marca == "Hyundai")
+    {
         return 16000000;
-    } else if (marca == "Suzuki") {
+    }
+    else if (marca == "Suzuki")
+    {
         return 12000000;
-    } else if (marca == "Ford") {
+    }
+    else if (marca == "Ford")
+    {
         return 17000000;
-    } else if (marca == "Chevrolet") {
+    }
+    else if (marca == "Chevrolet")
+    {
         return 18000000;
-    } else if (marca == "Honda") {
+    }
+    else if (marca == "Honda")
+    {
         return 21000000;
-    } else {
+    }
+    else
+    {
         cout << "Marca no valida" << endl;
         cout << "Marcas validas: Toyota, Hyundai, Suzuki, Ford, Chevrolet, Honda" << endl;
         return 0;
     }
 }
 
-int precioBaseCamion(const string &marca) {
+int precioBaseCamion(const string &marca)
+{
 
-    if (marca == "Volvo") {
+    if (marca == "Volvo")
+    {
         return 100000000;
-    } else if (marca == "Iveco") {
+    }
+    else if (marca == "Iveco")
+    {
         return 85000000;
-    } else if (marca == "Mercedes") {
+    }
+    else if (marca == "Mercedes")
+    {
         return 110000000;
-    } else if (marca == "Isuzu") {
+    }
+    else if (marca == "Isuzu")
+    {
         return 70000000;
-    } else if (marca == "MAN") {
+    }
+    else if (marca == "MAN")
+    {
         return 105000000;
-    } else if (marca == "Scania") {
+    }
+    else if (marca == "Scania")
+    {
         return 95000000;
-    } else {
+    }
+    else
+    {
         cout << "Marca no valida" << endl;
         cout << "Marcas validas: Volvo, Iveco, Mercedes, Isuzu, MAN, Scania" << endl;
         return 0;
     }
 }
 
-int precioBaseMoto(const string &marca) {
-    if (marca == "Yamaha") {
+int precioBaseMoto(const string &marca)
+{
+    if (marca == "Yamaha")
+    {
         return 14000000;
-    } else if (marca == "Suzuki") {
+    }
+    else if (marca == "Suzuki")
+    {
         return 8000000;
-    } else if (marca == "Honda") {
+    }
+    else if (marca == "Honda")
+    {
         return 15000000;
-    } else if (marca == "KTM") {
+    }
+    else if (marca == "KTM")
+    {
         return 5000000;
-    } else if (marca == "BMW") {
+    }
+    else if (marca == "BMW")
+    {
         return 18000000;
-    } else if (marca == "Kawasaki") {
+    }
+    else if (marca == "Kawasaki")
+    {
         return 13000000;
-    } else {
+    }
+    else
+    {
         cout << "Marca no valida" << endl;
         cout << "Marcas validas: Yamaha, Suzuki, Honda, KTM, BMW, Kawasaki" << endl;
         return 0;
     }
 }
 
-void mostrarVehiculo(Vehiculo *vehiculo) {
+void mostrarVehiculo(Vehiculo *vehiculo)
+{
     cout << "-------------------" << endl;
     cout << vehiculo->getTipo() << endl;
     cout << "-------------------" << endl;
@@ -177,7 +237,8 @@ void mostrarVehiculo(Vehiculo *vehiculo) {
     cout << "Valor Final: " << vehiculo->calcularPrecioFinal() << endl;
 }
 
-void agregarAuto(Cliente *cliente) {
+void agregarAuto(Cliente *cliente)
+{
     int numeroMotor, numeroRuedas, maxLitros, anio, numeroPuertas;
     TipoCombustible tipoCombustible;
     string marca;
@@ -187,13 +248,15 @@ void agregarAuto(Cliente *cliente) {
     cout << "Ingresa la marca: ";
     cin >> marca;
     precio = precioBaseAuto(marca);
-    if (precio == 0) {
+    if (precio == 0)
+    {
         return;
     }
     cout << "Precio base del auto: " << precio << endl;
     cout << "Ingresa el anio: ";
     cin >> anio;
-    if (cin.fail()) {
+    if (cin.fail())
+    {
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout << "Debe ingresar un numero entero. Intente de nuevo." << endl;
@@ -201,7 +264,8 @@ void agregarAuto(Cliente *cliente) {
     }
     cout << "Ingresa el numero de motor: ";
     cin >> numeroMotor;
-    if (cin.fail()) {
+    if (cin.fail())
+    {
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout << "Debe ingresar un numero entero. Intente de nuevo." << endl;
@@ -209,7 +273,8 @@ void agregarAuto(Cliente *cliente) {
     }
     cout << "Ingresa el numero de ruedas: ";
     cin >> numeroRuedas;
-    if (cin.fail()) {
+    if (cin.fail())
+    {
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout << "Debe ingresar un numero entero. Intente de nuevo." << endl;
@@ -222,38 +287,51 @@ void agregarAuto(Cliente *cliente) {
     cout << "Selecciona el tipo de combustible: ";
     int tipoCombustibleVal;
     cin >> tipoCombustibleVal;
-    if (cin.fail()) {
+    if (cin.fail())
+    {
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout << "Debe ingresar un numero entre 1 y 3. Intente de nuevo." << endl;
         return;
     }
-    if (tipoCombustibleVal == 1) {
+    if (tipoCombustibleVal == 1)
+    {
         tipoCombustible = TipoCombustible::Gasolina;
-    } else if (tipoCombustibleVal == 2) {
+    }
+    else if (tipoCombustibleVal == 2)
+    {
         tipoCombustible = TipoCombustible::Gas;
-    } else if (tipoCombustibleVal == 3) {
+    }
+    else if (tipoCombustibleVal == 3)
+    {
         tipoCombustible = TipoCombustible::Electrico;
-    } else {
+    }
+    else
+    {
         cout << "Tipo de combustible no valido" << endl;
         return;
     }
-    if (tipoCombustible == TipoCombustible::Gasolina) {
+    if (tipoCombustible == TipoCombustible::Gasolina)
+    {
         cout << "Ingresa el maximo de litros: ";
         cin >> maxLitros;
 
-        if (cin.fail()) {
+        if (cin.fail())
+        {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             cout << "Debe ingresar un numero entero. Intente de nuevo." << endl;
             return;
         }
-    } else {
+    }
+    else
+    {
         maxLitros = 0;
     }
     cout << "Ingresa el numero de puertas: ";
     cin >> numeroPuertas;
-    if (cin.fail()) {
+    if (cin.fail())
+    {
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout << "Debe ingresar un numero entero. Intente de nuevo." << endl;
@@ -261,18 +339,22 @@ void agregarAuto(Cliente *cliente) {
     }
     Vehiculo *autoVehiculo = new Auto(numeroMotor, numeroRuedas, tipoCombustible, maxLitros, marca, precio, anio,
                                       numeroPuertas);
-    if (cliente != NULL) {
+    if (cliente != NULL)
+    {
         Venta venta = *new Venta(*autoVehiculo, *cliente, ventas.size());
         ventas.push_back(venta);
         cout << "Venta agregada correctamente" << endl;
         mostrarVehiculo(autoVehiculo);
-    } else {
+    }
+    else
+    {
         cout << "Necesitas tener un cliente registrado para hacer una venta." << endl;
     }
     return;
 }
 
-void agregarCamion(Cliente *cliente) {
+void agregarCamion(Cliente *cliente)
+{
     int numeroMotor, numeroRuedas, maxLitros, anio, numeroPuertas;
     TipoCombustible tipoCombustible;
     string marca;
@@ -282,13 +364,15 @@ void agregarCamion(Cliente *cliente) {
     cout << "Ingresa la marca: ";
     cin >> marca;
     precio = precioBaseCamion(marca);
-    if (precio == 0) {
+    if (precio == 0)
+    {
         return;
     }
     cout << "Precio base del Camion: " << precio << endl;
     cout << "Ingresa el anio: ";
     cin >> anio;
-    if (cin.fail()) {
+    if (cin.fail())
+    {
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout << "Debe ingresar un numero entero. Intente de nuevo." << endl;
@@ -296,7 +380,8 @@ void agregarCamion(Cliente *cliente) {
     }
     cout << "Ingresa el numero de motor: ";
     cin >> numeroMotor;
-    if (cin.fail()) {
+    if (cin.fail())
+    {
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout << "Debe ingresar un numero entero. Intente de nuevo." << endl;
@@ -304,7 +389,8 @@ void agregarCamion(Cliente *cliente) {
     }
     cout << "Ingresa el numero de ruedas: ";
     cin >> numeroRuedas;
-    if (cin.fail()) {
+    if (cin.fail())
+    {
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout << "Debe ingresar un numero entero. Intente de nuevo." << endl;
@@ -317,38 +403,51 @@ void agregarCamion(Cliente *cliente) {
     cout << "Selecciona el tipo de combustible: ";
     int tipoCombustibleVal;
     cin >> tipoCombustibleVal;
-    if (cin.fail()) {
+    if (cin.fail())
+    {
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout << "Debe ingresar un numero entre 1 y 3. Intente de nuevo." << endl;
         return;
     }
-    if (tipoCombustibleVal == 1) {
+    if (tipoCombustibleVal == 1)
+    {
         tipoCombustible = TipoCombustible::Gasolina;
-    } else if (tipoCombustibleVal == 2) {
+    }
+    else if (tipoCombustibleVal == 2)
+    {
         tipoCombustible = TipoCombustible::Gas;
-    } else if (tipoCombustibleVal == 3) {
+    }
+    else if (tipoCombustibleVal == 3)
+    {
         tipoCombustible = TipoCombustible::Electrico;
-    } else {
+    }
+    else
+    {
         cout << "Tipo de combustible no valido" << endl;
         return;
     }
-    if (tipoCombustible == TipoCombustible::Gasolina) {
+    if (tipoCombustible == TipoCombustible::Gasolina)
+    {
         cout << "Ingresa el maximo de litros: ";
         cin >> maxLitros;
 
-        if (cin.fail()) {
+        if (cin.fail())
+        {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             cout << "Debe ingresar un numero entero. Intente de nuevo." << endl;
             return;
         }
-    } else {
+    }
+    else
+    {
         maxLitros = 0;
     }
     cout << "Ingresa el numero de puertas: ";
     cin >> numeroPuertas;
-    if (cin.fail()) {
+    if (cin.fail())
+    {
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout << "Debe ingresar un numero entero. Intente de nuevo." << endl;
@@ -356,18 +455,22 @@ void agregarCamion(Cliente *cliente) {
     }
     Vehiculo *autoVehiculo = new Camion(numeroMotor, numeroRuedas, tipoCombustible, maxLitros, marca, precio, anio,
                                         numeroPuertas);
-    if (cliente != NULL) {
+    if (cliente != NULL)
+    {
         Venta venta = *new Venta(*autoVehiculo, *cliente, ventas.size());
         ventas.push_back(venta);
         cout << "Venta agregada correctamente" << endl;
         mostrarVehiculo(autoVehiculo);
-    } else {
+    }
+    else
+    {
         cout << "Necesitas tener un cliente registrado para hacer una venta." << endl;
     }
     return;
 }
 
-void agregarMoto(Cliente *cliente) {
+void agregarMoto(Cliente *cliente)
+{
     int numeroMotor, numeroRuedas, maxLitros, anio;
     TipoCombustible tipoCombustible;
     string marca;
@@ -377,13 +480,15 @@ void agregarMoto(Cliente *cliente) {
     cout << "Ingresa la marca: ";
     cin >> marca;
     precio = precioBaseMoto(marca);
-    if (precio == 0) {
+    if (precio == 0)
+    {
         return;
     }
     cout << "Precio base de la moto: " << precio << endl;
     cout << "Ingresa el anio: ";
     cin >> anio;
-    if (cin.fail()) {
+    if (cin.fail())
+    {
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout << "Debe ingresar un numero entero. Intente de nuevo." << endl;
@@ -391,7 +496,8 @@ void agregarMoto(Cliente *cliente) {
     }
     cout << "Ingresa el numero de motor: ";
     cin >> numeroMotor;
-    if (cin.fail()) {
+    if (cin.fail())
+    {
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout << "Debe ingresar un numero entero. Intente de nuevo." << endl;
@@ -399,7 +505,8 @@ void agregarMoto(Cliente *cliente) {
     }
     cout << "Ingresa el numero de ruedas: ";
     cin >> numeroRuedas;
-    if (cin.fail()) {
+    if (cin.fail())
+    {
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout << "Debe ingresar un numero entero. Intente de nuevo." << endl;
@@ -412,126 +519,162 @@ void agregarMoto(Cliente *cliente) {
     cout << "Selecciona el tipo de combustible: ";
     int tipoCombustibleVal;
     cin >> tipoCombustibleVal;
-    if (cin.fail()) {
+    if (cin.fail())
+    {
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout << "Debe ingresar un numero entre 1 y 3. Intente de nuevo." << endl;
         return;
     }
-    if (tipoCombustibleVal == 1) {
+    if (tipoCombustibleVal == 1)
+    {
         tipoCombustible = TipoCombustible::Gasolina;
-    } else if (tipoCombustibleVal == 2) {
+    }
+    else if (tipoCombustibleVal == 2)
+    {
         tipoCombustible = TipoCombustible::Gas;
-    } else if (tipoCombustibleVal == 3) {
+    }
+    else if (tipoCombustibleVal == 3)
+    {
         tipoCombustible = TipoCombustible::Electrico;
-    } else {
+    }
+    else
+    {
         cout << "Tipo de combustible no valido" << endl;
         return;
     }
-    if (tipoCombustible == TipoCombustible::Gasolina) {
+    if (tipoCombustible == TipoCombustible::Gasolina)
+    {
         cout << "Ingresa el maximo de litros: ";
         cin >> maxLitros;
 
-        if (cin.fail()) {
+        if (cin.fail())
+        {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             cout << "Debe ingresar un numero entero. Intente de nuevo." << endl;
             return;
         }
-    } else {
+    }
+    else
+    {
         maxLitros = 0;
     }
     Vehiculo *autoVehiculo = new Moto(numeroMotor, numeroRuedas, tipoCombustible, maxLitros, marca, precio, anio);
-    if (cliente != NULL) {
+    if (cliente != NULL)
+    {
         Venta venta = *new Venta(*autoVehiculo, *cliente, ventas.size());
         ventas.push_back(venta);
         cout << "Venta agregada correctamente" << endl;
         mostrarVehiculo(autoVehiculo);
-    } else {
+    }
+    else
+    {
         cout << "Necesitas tener un cliente registrado para hacer una venta." << endl;
     }
     return;
 }
 
-
-void mostrarMejorCliente() {
+void mostrarMejorCliente()
+{
     unordered_map<string, int> contadorCompras; // Mapa para contar las compras por RUT de cliente
     Cliente *mejorCliente = nullptr;
     int maximo = 0;
 
-    for (const auto &venta: ventas) {
+    for (const auto &venta : ventas)
+    {
         const string &rut = venta.getCliente().getRut();
         contadorCompras[rut]++; // Incrementa el contador para este cliente
 
-        if (contadorCompras[rut] > maximo) {
+        if (contadorCompras[rut] > maximo)
+        {
             maximo = contadorCompras[rut];
             mejorCliente = &const_cast<Cliente &>(venta.getCliente());
         }
     }
 
-    if (mejorCliente != nullptr) {
+    if (mejorCliente != nullptr)
+    {
         cout << "El cliente que compro mas vehiculos es: " << mejorCliente->getNombre() << " ("
              << mejorCliente->getRut() << ")" << endl;
         cout << "Con un total de: " << maximo << " vehiculos comprados" << endl;
-    } else {
+    }
+    else
+    {
         cout << "No hay clientes registrados" << endl;
     }
 }
 
-void mostrarCantidadCliente(Cliente *cliente, string tipoDeVehiculo) {
+void mostrarCantidadCliente(Cliente *cliente, string tipoDeVehiculo)
+{
     int totalCompras = 0;
 
-    for (const auto &venta: ventas) {
+    for (const auto &venta : ventas)
+    {
         const string &rut = venta.getCliente().getRut();
 
-        if (rut == cliente->getRut()) {
-            if (tipoDeVehiculo == "Vehiculo" || venta.getVehiculo().getTipo() == tipoDeVehiculo) {
+        if (rut == cliente->getRut())
+        {
+            if (tipoDeVehiculo == "Vehiculo" || venta.getVehiculo().getTipo() == tipoDeVehiculo)
+            {
                 totalCompras++;
             }
         }
     }
     const string vehiculoPlural = tipoDeVehiculo == "Camion" ? "nes" : "s";
 
-    if (totalCompras > 0) {
+    if (totalCompras > 0)
+    {
         cout << "El cliente " << cliente->getNombre() << " (" << cliente->getRut() << ")" << endl;
         cout << "Compro " << totalCompras << " " << tipoDeVehiculo << vehiculoPlural << endl;
-    } else {
+    }
+    else
+    {
         cout << "El cliente " << cliente->getNombre() << " (" << cliente->getRut() << ")" << endl;
         cout << "No ha comprado " << tipoDeVehiculo << vehiculoPlural << endl;
     }
 }
 
-void mostrarTotalVentas(string tipoDeVehiculo) {
+void mostrarTotalVentas(string tipoDeVehiculo)
+{
     int totalCompras = 0;
 
-    for (const auto &venta: ventas) {
+    for (const auto &venta : ventas)
+    {
 
-        if (tipoDeVehiculo == "Vehiculo" || venta.getVehiculo().getTipo() == tipoDeVehiculo) {
+        if (tipoDeVehiculo == "Vehiculo" || venta.getVehiculo().getTipo() == tipoDeVehiculo)
+        {
             totalCompras++;
         }
-
     }
     const string vehiculoPlural = tipoDeVehiculo == "Camion" ? "nes" : "s";
 
-    if (totalCompras > 0) {
+    if (totalCompras > 0)
+    {
         cout << "Se han comprado " << totalCompras << " " << tipoDeVehiculo << vehiculoPlural << endl;
-    } else {
+    }
+    else
+    {
         cout << "No se han comprado " << tipoDeVehiculo << vehiculoPlural << endl;
     }
 }
 
-void mostrarPromedioVentas(string tipoDeVehiculo) {
+void mostrarPromedioVentas(string tipoDeVehiculo)
+{
     long long sumaPrecios = 0;
     int contador = 0;
 
-    for (const auto& venta : ventas) {
-        if (tipoDeVehiculo == "Vehiculo" || venta.getVehiculo().getTipo() == tipoDeVehiculo) {
+    for (const auto &venta : ventas)
+    {
+        if (tipoDeVehiculo == "Vehiculo" || venta.getVehiculo().getTipo() == tipoDeVehiculo)
+        {
             sumaPrecios += venta.getVehiculo().getPrecio();
             contador++;
         }
     }
 
-    if (contador == 0) {
+    if (contador == 0)
+    {
         cout << "No hay ventas para este tipo de vehiculo: " << tipoDeVehiculo << endl;
         return;
     }
@@ -540,7 +683,8 @@ void mostrarPromedioVentas(string tipoDeVehiculo) {
     cout << "El precio promedio de ventas para " << tipoDeVehiculo << " es: " << promedio << endl;
 }
 
-void mostrarCabecera(Cliente *cliente) {
+void mostrarCabecera(Cliente *cliente)
+{
     clearScreen();
     cout << " " << endl;
     cout << "      Autos Buenos         " << endl;
@@ -549,7 +693,8 @@ void mostrarCabecera(Cliente *cliente) {
     cout << " " << endl;
 }
 
-void menu(void) {
+void menu(void)
+{
     int opcion = 0;
     Cliente *cliente = NULL;
 
@@ -557,8 +702,10 @@ void menu(void) {
     readAndCreateVehicles();
     cliente = &getOrCreateCliente("8651247-9", "Darren Hill");
     // TODO: TESTING*/
-    while (opcion != 4) {
-        if (cliente == NULL) {
+    while (opcion != 4)
+    {
+        if (cliente == NULL)
+        {
             clearScreen();
             string nombreCliente, rutCliente;
             cout << " " << endl;
@@ -579,16 +726,19 @@ void menu(void) {
         cout << "  Seleccione una opcion: ";
         cin >> opcion;
         // Verificar si la entrada es válida
-        if (cin.fail()) {
+        if (cin.fail())
+        {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             cout << "Debe ingresar un numero entre 1 y 6. Intente de nuevo." << endl;
             continue;
         }
 
-        if (opcion == 1) {
+        if (opcion == 1)
+        {
             int opcion_venta = -1;
-            while (opcion_venta != 4) {
+            while (opcion_venta != 4)
+            {
                 clearScreen();
                 cout << " " << endl;
                 cout << " <---- Venta de Vehiculos ---> " << endl;
@@ -600,30 +750,42 @@ void menu(void) {
                 cout << " " << endl;
                 cout << "  Seleccione una opcion: ";
                 cin >> opcion_venta;
-                if (opcion_venta == 1) {
+                if (opcion_venta == 1)
+                {
                     agregarAuto(cliente);
                     cout << "Presione ENTER para continuar...";
                     cin.ignore();
                     cin.get();
-                } else if (opcion_venta == 2) {
+                }
+                else if (opcion_venta == 2)
+                {
                     agregarMoto(cliente);
                     cout << "Presione ENTER para continuar...";
                     cin.ignore();
                     cin.get();
-                } else if (opcion_venta == 3) {
+                }
+                else if (opcion_venta == 3)
+                {
                     agregarCamion(cliente);
                     cout << "Presione ENTER para continuar...";
                     cin.ignore();
                     cin.get();
-                } else if (opcion_venta == 4) {
+                }
+                else if (opcion_venta == 4)
+                {
                     cout << "Volviendo al menu anterior" << endl;
-                } else {
+                }
+                else
+                {
                     cout << "Ingresa una opcion entre 1 y 4" << endl;
                 }
             }
-        } else if (opcion == 2) {
+        }
+        else if (opcion == 2)
+        {
             int opcion_stats = 0;
-            while (opcion_stats != 5) {
+            while (opcion_stats != 5)
+            {
                 clearScreen();
                 cout << " " << endl;
                 cout << " <---- Estadisticas de Ventas ---> " << endl;
@@ -636,16 +798,19 @@ void menu(void) {
                 cout << "Seleccione una opcion : ";
                 cin >> opcion_stats;
 
-                if (opcion_stats == 1) {
+                if (opcion_stats == 1)
+                {
                     mostrarMejorCliente();
                     // hacer una pausa
                     cout << "Presione ENTER para continuar...";
                     cin.ignore();
                     cin.get();
-
-                } else if (opcion_stats == 2) {
+                }
+                else if (opcion_stats == 2)
+                {
                     int opcion_stats_promedio = 0;
-                    while (opcion_stats_promedio != 5) {
+                    while (opcion_stats_promedio != 5)
+                    {
                         clearScreen();
                         cout << " " << endl;
                         cout << " <---- Estadisticas | Cantidad de ventas del Usuario ---> " << endl;
@@ -658,35 +823,49 @@ void menu(void) {
                         cout << "Seleccione una opcion : ";
                         cin >> opcion_stats_promedio;
 
-                        if (opcion_stats_promedio == 1) {
+                        if (opcion_stats_promedio == 1)
+                        {
                             mostrarCantidadCliente(cliente, "Auto");
                             cout << "Presione ENTER para continuar...";
                             cin.ignore();
                             cin.get();
-                        } else if (opcion_stats_promedio == 2) {
+                        }
+                        else if (opcion_stats_promedio == 2)
+                        {
                             mostrarCantidadCliente(cliente, "Moto");
                             cout << "Presione ENTER para continuar...";
                             cin.ignore();
                             cin.get();
-                        } else if (opcion_stats_promedio == 3) {
+                        }
+                        else if (opcion_stats_promedio == 3)
+                        {
                             mostrarCantidadCliente(cliente, "Camion");
                             cout << "Presione ENTER para continuar...";
                             cin.ignore();
                             cin.get();
-                        } else if (opcion_stats_promedio == 4) {
+                        }
+                        else if (opcion_stats_promedio == 4)
+                        {
                             mostrarCantidadCliente(cliente, "Vehiculo");
                             cout << "Presione ENTER para continuar...";
                             cin.ignore();
                             cin.get();
-                        } else if (opcion_stats_promedio == 5) {
+                        }
+                        else if (opcion_stats_promedio == 5)
+                        {
                             cout << "Volviendo al menu anterior" << endl;
-                        } else {
+                        }
+                        else
+                        {
                             cout << "Ingresa una opcion entre 1 y 5" << endl;
                         }
                     }
-                } else if (opcion_stats == 3) {
+                }
+                else if (opcion_stats == 3)
+                {
                     int opcion_stats_total = 0;
-                    while (opcion_stats_total != 5) {
+                    while (opcion_stats_total != 5)
+                    {
                         clearScreen();
                         cout << " " << endl;
                         cout << " <---- Estadisticas | Ventas Total de la empresa ---> " << endl;
@@ -699,35 +878,49 @@ void menu(void) {
                         cout << "Seleccione una opcion : ";
                         cin >> opcion_stats_total;
 
-                        if (opcion_stats_total == 1) {
+                        if (opcion_stats_total == 1)
+                        {
                             mostrarTotalVentas("Auto");
                             cout << "Presione ENTER para continuar...";
                             cin.ignore();
                             cin.get();
-                        } else if (opcion_stats_total == 2) {
+                        }
+                        else if (opcion_stats_total == 2)
+                        {
                             mostrarTotalVentas("Moto");
                             cout << "Presione ENTER para continuar...";
                             cin.ignore();
                             cin.get();
-                        } else if (opcion_stats_total == 3) {
+                        }
+                        else if (opcion_stats_total == 3)
+                        {
                             mostrarTotalVentas("Camion");
                             cout << "Presione ENTER para continuar...";
                             cin.ignore();
                             cin.get();
-                        } else if (opcion_stats_total == 4) {
+                        }
+                        else if (opcion_stats_total == 4)
+                        {
                             mostrarTotalVentas("Vehiculo");
                             cout << "Presione ENTER para continuar...";
                             cin.ignore();
                             cin.get();
-                        } else if (opcion_stats_total == 5) {
+                        }
+                        else if (opcion_stats_total == 5)
+                        {
                             cout << "Volviendo al menu anterior" << endl;
-                        } else {
+                        }
+                        else
+                        {
                             cout << "Ingresa una opcion entre 1 y 5" << endl;
                         }
                     }
-                } else if (opcion_stats == 4) {
+                }
+                else if (opcion_stats == 4)
+                {
                     int opcion_stats_prom = 0;
-                    while (opcion_stats_prom != 5) {
+                    while (opcion_stats_prom != 5)
+                    {
                         clearScreen();
                         cout << " " << endl;
                         cout << " <---- Estadisticas | Promedios Totales de la empresa ---> " << endl;
@@ -740,52 +933,74 @@ void menu(void) {
                         cout << "Seleccione una opcion : ";
                         cin >> opcion_stats_prom;
 
-                        if (opcion_stats_prom == 1) {
+                        if (opcion_stats_prom == 1)
+                        {
                             mostrarPromedioVentas("Auto");
                             cout << "Presione ENTER para continuar...";
                             cin.ignore();
                             cin.get();
-                        } else if (opcion_stats_prom == 2) {
+                        }
+                        else if (opcion_stats_prom == 2)
+                        {
                             mostrarPromedioVentas("Moto");
                             cout << "Presione ENTER para continuar...";
                             cin.ignore();
                             cin.get();
-                        } else if (opcion_stats_prom == 3) {
+                        }
+                        else if (opcion_stats_prom == 3)
+                        {
                             mostrarPromedioVentas("Camion");
                             cout << "Presione ENTER para continuar...";
                             cin.ignore();
                             cin.get();
-                        } else if (opcion_stats_prom == 4) {
+                        }
+                        else if (opcion_stats_prom == 4)
+                        {
                             mostrarPromedioVentas("Vehiculo");
                             cout << "Presione ENTER para continuar...";
                             cin.ignore();
                             cin.get();
-                        } else if (opcion_stats_prom == 5) {
+                        }
+                        else if (opcion_stats_prom == 5)
+                        {
                             cout << "Volviendo al menu anterior" << endl;
-                        } else {
+                        }
+                        else
+                        {
                             cout << "Ingresa una opcion entre 1 y 5" << endl;
                         }
                     }
-                } else if (opcion_stats == 5) {
+                }
+                else if (opcion_stats == 5)
+                {
                     cout << "Volviendo al menu anterior" << endl;
-                } else {
+                }
+                else
+                {
                     cout << "Ingresa una opcion entre 1 y 5" << endl;
                 }
             }
-        } else if (opcion == 3) {
+        }
+        else if (opcion == 3)
+        {
             cout << " - Cerrando sesion." << endl;
             cliente = NULL;
             continue;
-        } else if (opcion == 4) {
+        }
+        else if (opcion == 4)
+        {
             cout << "Saliendo del programa." << endl;
-        } else {
+        }
+        else
+        {
             cout << "Ingresa una opcion entre 1 y 4" << endl;
         }
     }
     return;
 }
 
-int main(void) {
+int main(void)
+{
 
     menu();
     cout << "-------------------" << endl;
