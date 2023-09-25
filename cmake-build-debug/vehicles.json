@@ -1,1767 +1,1768 @@
 [
     {
-        "id": 1,
         "vehiculo": {
-            "numeroMotor": 1996,
+            "numeroMotor": 2293,
             "numeroRuedas": 4,
+            "tipoCombustible": "Electrico",
+            "maxLitros": 51,
+            "marca": "Rogers, Johnson and Francis",
+            "precio": 49405,
+            "anio": 1997,
+            "tipo": "Camion",
+            "numeroPuertas": 3
+        },
+        "cliente": {
+            "nombre": "Joshua Quinn",
+            "rut": "5015798-8"
+        },
+        "id": 2494
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 5083,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Gas",
+            "maxLitros": 83,
+            "marca": "Barajas-Davis",
+            "precio": 9768,
+            "anio": 2007,
+            "tipo": "Camion",
+            "numeroPuertas": 3
+        },
+        "cliente": {
+            "nombre": "Cynthia Bennett",
+            "rut": "2263710-5"
+        },
+        "id": 4143
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 9069,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Gasolina",
+            "maxLitros": 77,
+            "marca": "Hines, Cox and Brown",
+            "precio": 24324,
+            "anio": 1995,
+            "tipo": "Auto",
+            "numeroPuertas": 3
+        },
+        "cliente": {
+            "nombre": "Scott Morris",
+            "rut": "1566547-5"
+        },
+        "id": 2768
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 4031,
+            "numeroRuedas": 2,
+            "tipoCombustible": "Electrico",
+            "maxLitros": 68,
+            "marca": "Thomas, Williams and Santiago",
+            "precio": 30384,
+            "anio": 2005,
+            "tipo": "Moto"
+        },
+        "cliente": {
+            "nombre": "Joshua Quinn",
+            "rut": "5015798-8"
+        },
+        "id": 7161
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 6556,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Electrico",
+            "maxLitros": 82,
+            "marca": "Snyder, Howard and Dominguez",
+            "precio": 14866,
+            "anio": 1997,
+            "tipo": "Auto",
+            "numeroPuertas": 4
+        },
+        "cliente": {
+            "nombre": "Scott Morris",
+            "rut": "1566547-5"
+        },
+        "id": 7256
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 1029,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Gasolina",
+            "maxLitros": 88,
+            "marca": "Chang-Valdez",
+            "precio": 13205,
+            "anio": 2015,
+            "tipo": "Camion",
+            "numeroPuertas": 4
+        },
+        "cliente": {
+            "nombre": "Cynthia Bennett",
+            "rut": "2263710-5"
+        },
+        "id": 7876
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 1935,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Electrico",
+            "maxLitros": 88,
+            "marca": "Washington, Torres and Mckinney",
+            "precio": 49611,
+            "anio": 1993,
+            "tipo": "Camion",
+            "numeroPuertas": 5
+        },
+        "cliente": {
+            "nombre": "Whitney Anthony",
+            "rut": "20587367-4"
+        },
+        "id": 3000
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 8638,
+            "numeroRuedas": 2,
             "tipoCombustible": "Electrico",
             "maxLitros": 54,
-            "marca": "Ford",
-            "precio": 17000000,
-            "anio": 2008,
-            "numeroPuertas": 4,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_6",
-            "rut": "66773571-5"
-        }
-    },
-    {
-        "id": 2,
-        "vehiculo": {
-            "numeroMotor": 4279,
-            "numeroRuedas": 2,
-            "tipoCombustible": "Gasolina",
-            "maxLitros": 14,
-            "marca": "Kawasaki",
-            "precio": 13000000,
-            "anio": 1995,
-            "tipo": "Moto"
-        },
-        "cliente": {
-            "nombre": "Cliente_3",
-            "rut": "37962363-1"
-        }
-    },
-    {
-        "id": 3,
-        "vehiculo": {
-            "numeroMotor": 7169,
-            "numeroRuedas": 2,
-            "tipoCombustible": "Gasolina",
-            "maxLitros": 13,
-            "marca": "BMW",
-            "precio": 18000000,
-            "anio": 1999,
-            "tipo": "Moto"
-        },
-        "cliente": {
-            "nombre": "Cliente_3",
-            "rut": "37962363-1"
-        }
-    },
-    {
-        "id": 4,
-        "vehiculo": {
-            "numeroMotor": 5101,
-            "numeroRuedas": 7,
-            "tipoCombustible": "Gas",
-            "maxLitros": 200,
-            "marca": "Scania",
-            "precio": 95000000,
+            "marca": "Price PLC",
+            "precio": 27080,
             "anio": 1998,
-            "numeroPuertas": 4,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_2",
-            "rut": "57934682-1"
-        }
-    },
-    {
-        "id": 5,
-        "vehiculo": {
-            "numeroMotor": 8601,
-            "numeroRuedas": 2,
-            "tipoCombustible": "Gasolina",
-            "maxLitros": 14,
-            "marca": "Yamaha",
-            "precio": 14000000,
-            "anio": 2011,
             "tipo": "Moto"
         },
         "cliente": {
-            "nombre": "Cliente_7",
-            "rut": "97648033-4"
-        }
+            "nombre": "Eric Obrien",
+            "rut": "20797041-2"
+        },
+        "id": 5185
     },
     {
-        "id": 6,
         "vehiculo": {
-            "numeroMotor": 7070,
+            "numeroMotor": 3048,
+            "numeroRuedas": 2,
+            "tipoCombustible": "Gas",
+            "maxLitros": 76,
+            "marca": "Nunez-Castillo",
+            "precio": 15944,
+            "anio": 2021,
+            "tipo": "Moto"
+        },
+        "cliente": {
+            "nombre": "Darren Hill",
+            "rut": "8651247-9"
+        },
+        "id": 665
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 6840,
             "numeroRuedas": 4,
             "tipoCombustible": "Electrico",
-            "maxLitros": 44,
-            "marca": "Toyota",
-            "precio": 19000000,
-            "anio": 1999,
-            "numeroPuertas": 4,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_6",
-            "rut": "66773571-5"
-        }
-    },
-    {
-        "id": 7,
-        "vehiculo": {
-            "numeroMotor": 7113,
-            "numeroRuedas": 4,
-            "tipoCombustible": "Gasolina",
-            "maxLitros": 41,
-            "marca": "Chevrolet",
-            "precio": 18000000,
-            "anio": 2006,
-            "numeroPuertas": 5,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_3",
-            "rut": "37962363-1"
-        }
-    },
-    {
-        "id": 8,
-        "vehiculo": {
-            "numeroMotor": 1150,
-            "numeroRuedas": 4,
-            "tipoCombustible": "Electrico",
-            "maxLitros": 78,
-            "marca": "Ford",
-            "precio": 17000000,
-            "anio": 2008,
-            "numeroPuertas": 2,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_6",
-            "rut": "66773571-5"
-        }
-    },
-    {
-        "id": 9,
-        "vehiculo": {
-            "numeroMotor": 3547,
-            "numeroRuedas": 2,
-            "tipoCombustible": "Gas",
-            "maxLitros": 18,
-            "marca": "Honda",
-            "precio": 15000000,
-            "anio": 2016,
-            "tipo": "Moto"
-        },
-        "cliente": {
-            "nombre": "Cliente_5",
-            "rut": "86314185-3"
-        }
-    },
-    {
-        "id": 10,
-        "vehiculo": {
-            "numeroMotor": 3302,
-            "numeroRuedas": 2,
-            "tipoCombustible": "Gas",
-            "maxLitros": 16,
-            "marca": "Suzuki",
-            "precio": 8000000,
-            "anio": 2003,
-            "tipo": "Moto"
-        },
-        "cliente": {
-            "nombre": "Cliente_1",
-            "rut": "92879183-9"
-        }
-    },
-    {
-        "id": 11,
-        "vehiculo": {
-            "numeroMotor": 5526,
-            "numeroRuedas": 17,
-            "tipoCombustible": "Gas",
-            "maxLitros": 109,
-            "marca": "Iveco",
-            "precio": 85000000,
-            "anio": 2009,
-            "numeroPuertas": 4,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_7",
-            "rut": "97648033-4"
-        }
-    },
-    {
-        "id": 12,
-        "vehiculo": {
-            "numeroMotor": 8840,
-            "numeroRuedas": 15,
-            "tipoCombustible": "Gas",
-            "maxLitros": 137,
-            "marca": "MAN",
-            "precio": 105000000,
-            "anio": 2016,
-            "numeroPuertas": 4,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_7",
-            "rut": "97648033-4"
-        }
-    },
-    {
-        "id": 13,
-        "vehiculo": {
-            "numeroMotor": 1366,
-            "numeroRuedas": 15,
-            "tipoCombustible": "Gas",
-            "maxLitros": 127,
-            "marca": "Volvo",
-            "precio": 100000000,
-            "anio": 2011,
-            "numeroPuertas": 2,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_7",
-            "rut": "97648033-4"
-        }
-    },
-    {
-        "id": 14,
-        "vehiculo": {
-            "numeroMotor": 5569,
-            "numeroRuedas": 4,
-            "tipoCombustible": "Gasolina",
-            "maxLitros": 58,
-            "marca": "Honda",
-            "precio": 21000000,
-            "anio": 2002,
-            "numeroPuertas": 3,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_1",
-            "rut": "92879183-9"
-        }
-    },
-    {
-        "id": 15,
-        "vehiculo": {
-            "numeroMotor": 3757,
-            "numeroRuedas": 4,
-            "tipoCombustible": "Gasolina",
-            "maxLitros": 64,
-            "marca": "Hyundai",
-            "precio": 16000000,
-            "anio": 1996,
-            "numeroPuertas": 4,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_6",
-            "rut": "66773571-5"
-        }
-    },
-    {
-        "id": 16,
-        "vehiculo": {
-            "numeroMotor": 5465,
-            "numeroRuedas": 2,
-            "tipoCombustible": "Gasolina",
-            "maxLitros": 19,
-            "marca": "KTM",
-            "precio": 5000000,
-            "anio": 2001,
-            "tipo": "Moto"
-        },
-        "cliente": {
-            "nombre": "Cliente_4",
-            "rut": "80054381-K"
-        }
-    },
-    {
-        "id": 17,
-        "vehiculo": {
-            "numeroMotor": 6029,
-            "numeroRuedas": 2,
-            "tipoCombustible": "Electrico",
-            "maxLitros": 12,
-            "marca": "BMW",
-            "precio": 18000000,
-            "anio": 2015,
-            "tipo": "Moto"
-        },
-        "cliente": {
-            "nombre": "Cliente_3",
-            "rut": "37962363-1"
-        }
-    },
-    {
-        "id": 18,
-        "vehiculo": {
-            "numeroMotor": 2882,
-            "numeroRuedas": 2,
-            "tipoCombustible": "Gas",
-            "maxLitros": 21,
-            "marca": "BMW",
-            "precio": 18000000,
-            "anio": 1992,
-            "tipo": "Moto"
-        },
-        "cliente": {
-            "nombre": "Cliente_7",
-            "rut": "97648033-4"
-        }
-    },
-    {
-        "id": 19,
-        "vehiculo": {
-            "numeroMotor": 7840,
-            "numeroRuedas": 9,
-            "tipoCombustible": "Gas",
-            "maxLitros": 100,
-            "marca": "Scania",
-            "precio": 95000000,
-            "anio": 2010,
-            "numeroPuertas": 3,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_1",
-            "rut": "92879183-9"
-        }
-    },
-    {
-        "id": 20,
-        "vehiculo": {
-            "numeroMotor": 5396,
-            "numeroRuedas": 4,
-            "tipoCombustible": "Gas",
-            "maxLitros": 51,
-            "marca": "Honda",
-            "precio": 21000000,
-            "anio": 1994,
-            "numeroPuertas": 4,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_2",
-            "rut": "57934682-1"
-        }
-    },
-    {
-        "id": 21,
-        "vehiculo": {
-            "numeroMotor": 6254,
-            "numeroRuedas": 2,
-            "tipoCombustible": "Electrico",
-            "maxLitros": 12,
-            "marca": "Yamaha",
-            "precio": 14000000,
-            "anio": 2009,
-            "tipo": "Moto"
-        },
-        "cliente": {
-            "nombre": "Cliente_4",
-            "rut": "80054381-K"
-        }
-    },
-    {
-        "id": 22,
-        "vehiculo": {
-            "numeroMotor": 8826,
-            "numeroRuedas": 16,
-            "tipoCombustible": "Electrico",
-            "maxLitros": 122,
-            "marca": "Scania",
-            "precio": 95000000,
-            "anio": 1998,
-            "numeroPuertas": 3,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_5",
-            "rut": "86314185-3"
-        }
-    },
-    {
-        "id": 23,
-        "vehiculo": {
-            "numeroMotor": 5733,
-            "numeroRuedas": 4,
-            "tipoCombustible": "Electrico",
-            "maxLitros": 49,
-            "marca": "Toyota",
-            "precio": 19000000,
-            "anio": 2018,
-            "numeroPuertas": 2,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_3",
-            "rut": "37962363-1"
-        }
-    },
-    {
-        "id": 24,
-        "vehiculo": {
-            "numeroMotor": 7950,
-            "numeroRuedas": 11,
-            "tipoCombustible": "Gasolina",
-            "maxLitros": 228,
-            "marca": "Scania",
-            "precio": 95000000,
-            "anio": 2023,
-            "numeroPuertas": 3,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_4",
-            "rut": "80054381-K"
-        }
-    },
-    {
-        "id": 25,
-        "vehiculo": {
-            "numeroMotor": 1904,
-            "numeroRuedas": 10,
-            "tipoCombustible": "Gasolina",
-            "maxLitros": 115,
-            "marca": "MAN",
-            "precio": 105000000,
-            "anio": 1994,
-            "numeroPuertas": 3,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_1",
-            "rut": "92879183-9"
-        }
-    },
-    {
-        "id": 26,
-        "vehiculo": {
-            "numeroMotor": 6182,
-            "numeroRuedas": 2,
-            "tipoCombustible": "Gasolina",
-            "maxLitros": 29,
-            "marca": "BMW",
-            "precio": 18000000,
-            "anio": 2003,
-            "tipo": "Moto"
-        },
-        "cliente": {
-            "nombre": "Cliente_4",
-            "rut": "80054381-K"
-        }
-    },
-    {
-        "id": 27,
-        "vehiculo": {
-            "numeroMotor": 2532,
-            "numeroRuedas": 4,
-            "tipoCombustible": "Gas",
-            "maxLitros": 73,
-            "marca": "Hyundai",
-            "precio": 16000000,
-            "anio": 2005,
-            "numeroPuertas": 5,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_5",
-            "rut": "86314185-3"
-        }
-    },
-    {
-        "id": 28,
-        "vehiculo": {
-            "numeroMotor": 2329,
-            "numeroRuedas": 12,
-            "tipoCombustible": "Gas",
-            "maxLitros": 285,
-            "marca": "Iveco",
-            "precio": 85000000,
-            "anio": 2009,
-            "numeroPuertas": 3,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_3",
-            "rut": "37962363-1"
-        }
-    },
-    {
-        "id": 29,
-        "vehiculo": {
-            "numeroMotor": 7657,
-            "numeroRuedas": 2,
-            "tipoCombustible": "Electrico",
-            "maxLitros": 20,
-            "marca": "Yamaha",
-            "precio": 14000000,
-            "anio": 2020,
-            "tipo": "Moto"
-        },
-        "cliente": {
-            "nombre": "Cliente_1",
-            "rut": "92879183-9"
-        }
-    },
-    {
-        "id": 30,
-        "vehiculo": {
-            "numeroMotor": 4942,
-            "numeroRuedas": 2,
-            "tipoCombustible": "Gas",
-            "maxLitros": 13,
-            "marca": "KTM",
-            "precio": 5000000,
-            "anio": 2009,
-            "tipo": "Moto"
-        },
-        "cliente": {
-            "nombre": "Cliente_5",
-            "rut": "86314185-3"
-        }
-    },
-    {
-        "id": 31,
-        "vehiculo": {
-            "numeroMotor": 4913,
-            "numeroRuedas": 10,
-            "tipoCombustible": "Electrico",
-            "maxLitros": 213,
-            "marca": "Isuzu",
-            "precio": 70000000,
-            "anio": 1998,
-            "numeroPuertas": 4,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_1",
-            "rut": "92879183-9"
-        }
-    },
-    {
-        "id": 32,
-        "vehiculo": {
-            "numeroMotor": 6209,
-            "numeroRuedas": 7,
-            "tipoCombustible": "Gas",
-            "maxLitros": 189,
-            "marca": "Mercedes",
-            "precio": 110000000,
-            "anio": 2007,
-            "numeroPuertas": 3,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_5",
-            "rut": "86314185-3"
-        }
-    },
-    {
-        "id": 33,
-        "vehiculo": {
-            "numeroMotor": 2843,
-            "numeroRuedas": 16,
-            "tipoCombustible": "Gas",
-            "maxLitros": 293,
-            "marca": "Isuzu",
-            "precio": 70000000,
-            "anio": 1995,
-            "numeroPuertas": 3,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_2",
-            "rut": "57934682-1"
-        }
-    },
-    {
-        "id": 34,
-        "vehiculo": {
-            "numeroMotor": 6555,
-            "numeroRuedas": 2,
-            "tipoCombustible": "Gas",
-            "maxLitros": 19,
-            "marca": "Honda",
-            "precio": 15000000,
-            "anio": 2001,
-            "tipo": "Moto"
-        },
-        "cliente": {
-            "nombre": "Cliente_3",
-            "rut": "37962363-1"
-        }
-    },
-    {
-        "id": 35,
-        "vehiculo": {
-            "numeroMotor": 9882,
-            "numeroRuedas": 4,
-            "tipoCombustible": "Gas",
-            "maxLitros": 70,
-            "marca": "Chevrolet",
-            "precio": 18000000,
-            "anio": 1997,
-            "numeroPuertas": 4,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_2",
-            "rut": "57934682-1"
-        }
-    },
-    {
-        "id": 36,
-        "vehiculo": {
-            "numeroMotor": 9265,
-            "numeroRuedas": 8,
-            "tipoCombustible": "Gas",
-            "maxLitros": 135,
-            "marca": "MAN",
-            "precio": 105000000,
+            "maxLitros": 50,
+            "marca": "Sparks-Clark",
+            "precio": 17568,
             "anio": 1990,
-            "numeroPuertas": 3,
-            "tipo": "Auto"
+            "tipo": "Camion",
+            "numeroPuertas": 4
         },
         "cliente": {
-            "nombre": "Cliente_6",
-            "rut": "66773571-5"
-        }
-    },
-    {
-        "id": 37,
-        "vehiculo": {
-            "numeroMotor": 3380,
-            "numeroRuedas": 2,
-            "tipoCombustible": "Gasolina",
-            "maxLitros": 25,
-            "marca": "Honda",
-            "precio": 15000000,
-            "anio": 2016,
-            "tipo": "Moto"
+            "nombre": "Eric Obrien",
+            "rut": "20797041-2"
         },
-        "cliente": {
-            "nombre": "Cliente_2",
-            "rut": "57934682-1"
-        }
+        "id": 4164
     },
     {
-        "id": 38,
         "vehiculo": {
-            "numeroMotor": 9419,
-            "numeroRuedas": 2,
-            "tipoCombustible": "Gas",
-            "maxLitros": 20,
-            "marca": "Honda",
-            "precio": 15000000,
-            "anio": 1996,
-            "tipo": "Moto"
-        },
-        "cliente": {
-            "nombre": "Cliente_4",
-            "rut": "80054381-K"
-        }
-    },
-    {
-        "id": 39,
-        "vehiculo": {
-            "numeroMotor": 9110,
-            "numeroRuedas": 2,
-            "tipoCombustible": "Gas",
-            "maxLitros": 21,
-            "marca": "Kawasaki",
-            "precio": 13000000,
-            "anio": 2017,
-            "tipo": "Moto"
-        },
-        "cliente": {
-            "nombre": "Cliente_5",
-            "rut": "86314185-3"
-        }
-    },
-    {
-        "id": 40,
-        "vehiculo": {
-            "numeroMotor": 4531,
-            "numeroRuedas": 7,
-            "tipoCombustible": "Gasolina",
-            "maxLitros": 166,
-            "marca": "MAN",
-            "precio": 105000000,
+            "numeroMotor": 8354,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Electrico",
+            "maxLitros": 99,
+            "marca": "Weaver Group",
+            "precio": 37227,
             "anio": 1999,
-            "numeroPuertas": 3,
-            "tipo": "Auto"
+            "tipo": "Auto",
+            "numeroPuertas": 4
         },
         "cliente": {
-            "nombre": "Cliente_5",
-            "rut": "86314185-3"
-        }
+            "nombre": "Scott Morris",
+            "rut": "1566547-5"
+        },
+        "id": 7088
     },
     {
-        "id": 41,
         "vehiculo": {
-            "numeroMotor": 3300,
-            "numeroRuedas": 2,
+            "numeroMotor": 6788,
+            "numeroRuedas": 4,
             "tipoCombustible": "Gasolina",
-            "maxLitros": 16,
-            "marca": "KTM",
-            "precio": 5000000,
+            "maxLitros": 45,
+            "marca": "Clark, Lewis and Beck",
+            "precio": 23461,
+            "anio": 2018,
+            "tipo": "Camion",
+            "numeroPuertas": 5
+        },
+        "cliente": {
+            "nombre": "Eric Obrien",
+            "rut": "20797041-2"
+        },
+        "id": 4337
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 3053,
+            "numeroRuedas": 2,
+            "tipoCombustible": "Gas",
+            "maxLitros": 86,
+            "marca": "Wood, Dean and Jones",
+            "precio": 38631,
             "anio": 2022,
             "tipo": "Moto"
         },
         "cliente": {
-            "nombre": "Cliente_2",
-            "rut": "57934682-1"
-        }
-    },
-    {
-        "id": 42,
-        "vehiculo": {
-            "numeroMotor": 3534,
-            "numeroRuedas": 2,
-            "tipoCombustible": "Electrico",
-            "maxLitros": 21,
-            "marca": "BMW",
-            "precio": 18000000,
-            "anio": 2020,
-            "tipo": "Moto"
+            "nombre": "Cynthia Bennett",
+            "rut": "2263710-5"
         },
-        "cliente": {
-            "nombre": "Cliente_5",
-            "rut": "86314185-3"
-        }
+        "id": 8538
     },
     {
-        "id": 43,
         "vehiculo": {
-            "numeroMotor": 2942,
+            "numeroMotor": 8259,
             "numeroRuedas": 4,
-            "tipoCombustible": "Gas",
-            "maxLitros": 49,
-            "marca": "Chevrolet",
-            "precio": 18000000,
-            "anio": 2016,
-            "numeroPuertas": 2,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_5",
-            "rut": "86314185-3"
-        }
-    },
-    {
-        "id": 44,
-        "vehiculo": {
-            "numeroMotor": 8862,
-            "numeroRuedas": 10,
             "tipoCombustible": "Gasolina",
-            "maxLitros": 178,
-            "marca": "Scania",
-            "precio": 95000000,
-            "anio": 2005,
-            "numeroPuertas": 3,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_5",
-            "rut": "86314185-3"
-        }
-    },
-    {
-        "id": 45,
-        "vehiculo": {
-            "numeroMotor": 5485,
-            "numeroRuedas": 2,
-            "tipoCombustible": "Gas",
-            "maxLitros": 22,
-            "marca": "Kawasaki",
-            "precio": 13000000,
-            "anio": 2003,
-            "tipo": "Moto"
-        },
-        "cliente": {
-            "nombre": "Cliente_3",
-            "rut": "37962363-1"
-        }
-    },
-    {
-        "id": 46,
-        "vehiculo": {
-            "numeroMotor": 1888,
-            "numeroRuedas": 2,
-            "tipoCombustible": "Gasolina",
-            "maxLitros": 11,
-            "marca": "Kawasaki",
-            "precio": 13000000,
+            "maxLitros": 81,
+            "marca": "Boyd LLC",
+            "precio": 31516,
             "anio": 2006,
-            "tipo": "Moto"
+            "tipo": "Auto",
+            "numeroPuertas": 4
         },
         "cliente": {
-            "nombre": "Cliente_5",
-            "rut": "86314185-3"
-        }
-    },
-    {
-        "id": 47,
-        "vehiculo": {
-            "numeroMotor": 5234,
-            "numeroRuedas": 4,
-            "tipoCombustible": "Electrico",
-            "maxLitros": 45,
-            "marca": "Chevrolet",
-            "precio": 18000000,
-            "anio": 2019,
-            "numeroPuertas": 4,
-            "tipo": "Auto"
+            "nombre": "Joshua Quinn",
+            "rut": "5015798-8"
         },
-        "cliente": {
-            "nombre": "Cliente_3",
-            "rut": "37962363-1"
-        }
+        "id": 4326
     },
     {
-        "id": 48,
         "vehiculo": {
-            "numeroMotor": 4169,
-            "numeroRuedas": 18,
-            "tipoCombustible": "Gasolina",
-            "maxLitros": 162,
-            "marca": "MAN",
-            "precio": 105000000,
-            "anio": 2004,
-            "numeroPuertas": 4,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_3",
-            "rut": "37962363-1"
-        }
-    },
-    {
-        "id": 49,
-        "vehiculo": {
-            "numeroMotor": 2974,
-            "numeroRuedas": 4,
-            "tipoCombustible": "Gasolina",
-            "maxLitros": 54,
-            "marca": "Ford",
-            "precio": 17000000,
-            "anio": 2004,
-            "numeroPuertas": 5,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_7",
-            "rut": "97648033-4"
-        }
-    },
-    {
-        "id": 50,
-        "vehiculo": {
-            "numeroMotor": 1085,
-            "numeroRuedas": 8,
-            "tipoCombustible": "Gas",
-            "maxLitros": 178,
-            "marca": "Iveco",
-            "precio": 85000000,
-            "anio": 1992,
-            "numeroPuertas": 3,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_4",
-            "rut": "80054381-K"
-        }
-    },
-    {
-        "id": 51,
-        "vehiculo": {
-            "numeroMotor": 6985,
-            "numeroRuedas": 4,
-            "tipoCombustible": "Electrico",
-            "maxLitros": 58,
-            "marca": "Suzuki",
-            "precio": 12000000,
-            "anio": 2002,
-            "numeroPuertas": 3,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_2",
-            "rut": "57934682-1"
-        }
-    },
-    {
-        "id": 52,
-        "vehiculo": {
-            "numeroMotor": 5343,
-            "numeroRuedas": 4,
-            "tipoCombustible": "Gasolina",
-            "maxLitros": 41,
-            "marca": "Suzuki",
-            "precio": 12000000,
-            "anio": 2000,
-            "numeroPuertas": 2,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_2",
-            "rut": "57934682-1"
-        }
-    },
-    {
-        "id": 53,
-        "vehiculo": {
-            "numeroMotor": 5306,
-            "numeroRuedas": 4,
-            "tipoCombustible": "Gas",
-            "maxLitros": 80,
-            "marca": "Ford",
-            "precio": 17000000,
-            "anio": 2002,
-            "numeroPuertas": 3,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_1",
-            "rut": "92879183-9"
-        }
-    },
-    {
-        "id": 54,
-        "vehiculo": {
-            "numeroMotor": 4798,
+            "numeroMotor": 2007,
             "numeroRuedas": 2,
-            "tipoCombustible": "Electrico",
-            "maxLitros": 22,
-            "marca": "BMW",
-            "precio": 18000000,
-            "anio": 1992,
-            "tipo": "Moto"
-        },
-        "cliente": {
-            "nombre": "Cliente_1",
-            "rut": "92879183-9"
-        }
-    },
-    {
-        "id": 55,
-        "vehiculo": {
-            "numeroMotor": 5279,
-            "numeroRuedas": 14,
-            "tipoCombustible": "Gas",
-            "maxLitros": 199,
-            "marca": "MAN",
-            "precio": 105000000,
-            "anio": 2012,
-            "numeroPuertas": 3,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_6",
-            "rut": "66773571-5"
-        }
-    },
-    {
-        "id": 56,
-        "vehiculo": {
-            "numeroMotor": 2069,
-            "numeroRuedas": 2,
-            "tipoCombustible": "Electrico",
-            "maxLitros": 22,
-            "marca": "Honda",
-            "precio": 15000000,
-            "anio": 1998,
-            "tipo": "Moto"
-        },
-        "cliente": {
-            "nombre": "Cliente_3",
-            "rut": "37962363-1"
-        }
-    },
-    {
-        "id": 57,
-        "vehiculo": {
-            "numeroMotor": 1522,
-            "numeroRuedas": 16,
-            "tipoCombustible": "Gas",
-            "maxLitros": 123,
-            "marca": "Volvo",
-            "precio": 100000000,
-            "anio": 2001,
-            "numeroPuertas": 4,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_1",
-            "rut": "92879183-9"
-        }
-    },
-    {
-        "id": 58,
-        "vehiculo": {
-            "numeroMotor": 2257,
-            "numeroRuedas": 2,
-            "tipoCombustible": "Electrico",
-            "maxLitros": 28,
-            "marca": "Honda",
-            "precio": 15000000,
-            "anio": 2016,
-            "tipo": "Moto"
-        },
-        "cliente": {
-            "nombre": "Cliente_6",
-            "rut": "66773571-5"
-        }
-    },
-    {
-        "id": 59,
-        "vehiculo": {
-            "numeroMotor": 7812,
-            "numeroRuedas": 4,
-            "tipoCombustible": "Gas",
-            "maxLitros": 59,
-            "marca": "Honda",
-            "precio": 21000000,
-            "anio": 1994,
-            "numeroPuertas": 3,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_1",
-            "rut": "92879183-9"
-        }
-    },
-    {
-        "id": 60,
-        "vehiculo": {
-            "numeroMotor": 1558,
-            "numeroRuedas": 4,
-            "tipoCombustible": "Electrico",
-            "maxLitros": 57,
-            "marca": "Suzuki",
-            "precio": 12000000,
-            "anio": 1997,
-            "numeroPuertas": 5,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_6",
-            "rut": "66773571-5"
-        }
-    },
-    {
-        "id": 61,
-        "vehiculo": {
-            "numeroMotor": 4639,
-            "numeroRuedas": 2,
-            "tipoCombustible": "Gas",
-            "maxLitros": 20,
-            "marca": "BMW",
-            "precio": 18000000,
-            "anio": 1990,
-            "tipo": "Moto"
-        },
-        "cliente": {
-            "nombre": "Cliente_7",
-            "rut": "97648033-4"
-        }
-    },
-    {
-        "id": 62,
-        "vehiculo": {
-            "numeroMotor": 9631,
-            "numeroRuedas": 4,
-            "tipoCombustible": "Gas",
-            "maxLitros": 71,
-            "marca": "Hyundai",
-            "precio": 16000000,
-            "anio": 1994,
-            "numeroPuertas": 4,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_3",
-            "rut": "37962363-1"
-        }
-    },
-    {
-        "id": 63,
-        "vehiculo": {
-            "numeroMotor": 7235,
-            "numeroRuedas": 4,
-            "tipoCombustible": "Gas",
-            "maxLitros": 69,
-            "marca": "Hyundai",
-            "precio": 16000000,
-            "anio": 2015,
-            "numeroPuertas": 4,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_2",
-            "rut": "57934682-1"
-        }
-    },
-    {
-        "id": 64,
-        "vehiculo": {
-            "numeroMotor": 8179,
-            "numeroRuedas": 4,
             "tipoCombustible": "Gasolina",
+            "maxLitros": 62,
+            "marca": "Wallace-Gutierrez",
+            "precio": 44482,
+            "anio": 2013,
+            "tipo": "Moto"
+        },
+        "cliente": {
+            "nombre": "Whitney Anthony",
+            "rut": "20587367-4"
+        },
+        "id": 1171
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 9310,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Electrico",
             "maxLitros": 67,
-            "marca": "Ford",
-            "precio": 17000000,
-            "anio": 2008,
-            "numeroPuertas": 4,
-            "tipo": "Auto"
+            "marca": "Buchanan-Padilla",
+            "precio": 23052,
+            "anio": 2020,
+            "tipo": "Auto",
+            "numeroPuertas": 2
         },
         "cliente": {
-            "nombre": "Cliente_1",
-            "rut": "92879183-9"
-        }
-    },
-    {
-        "id": 65,
-        "vehiculo": {
-            "numeroMotor": 8289,
-            "numeroRuedas": 8,
-            "tipoCombustible": "Gasolina",
-            "maxLitros": 253,
-            "marca": "MAN",
-            "precio": 105000000,
-            "anio": 2009,
-            "numeroPuertas": 4,
-            "tipo": "Auto"
+            "nombre": "Scott Morris",
+            "rut": "1566547-5"
         },
-        "cliente": {
-            "nombre": "Cliente_3",
-            "rut": "37962363-1"
-        }
+        "id": 5864
     },
     {
-        "id": 66,
         "vehiculo": {
-            "numeroMotor": 7628,
-            "numeroRuedas": 4,
-            "tipoCombustible": "Electrico",
-            "maxLitros": 58,
-            "marca": "Ford",
-            "precio": 17000000,
-            "anio": 2009,
-            "numeroPuertas": 4,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_4",
-            "rut": "80054381-K"
-        }
-    },
-    {
-        "id": 67,
-        "vehiculo": {
-            "numeroMotor": 6464,
-            "numeroRuedas": 14,
-            "tipoCombustible": "Gas",
-            "maxLitros": 267,
-            "marca": "Isuzu",
-            "precio": 70000000,
-            "anio": 2004,
-            "numeroPuertas": 2,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_2",
-            "rut": "57934682-1"
-        }
-    },
-    {
-        "id": 68,
-        "vehiculo": {
-            "numeroMotor": 8095,
-            "numeroRuedas": 10,
-            "tipoCombustible": "Gas",
-            "maxLitros": 237,
-            "marca": "Mercedes",
-            "precio": 110000000,
-            "anio": 2015,
-            "numeroPuertas": 3,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_7",
-            "rut": "97648033-4"
-        }
-    },
-    {
-        "id": 69,
-        "vehiculo": {
-            "numeroMotor": 8733,
+            "numeroMotor": 9460,
             "numeroRuedas": 2,
-            "tipoCombustible": "Electrico",
-            "maxLitros": 12,
-            "marca": "Suzuki",
-            "precio": 8000000,
+            "tipoCombustible": "Gas",
+            "maxLitros": 57,
+            "marca": "Jenkins, Kelly and Barrera",
+            "precio": 40025,
+            "anio": 2010,
+            "tipo": "Moto"
+        },
+        "cliente": {
+            "nombre": "Cynthia Bennett",
+            "rut": "2263710-5"
+        },
+        "id": 1108
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 4082,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Gasolina",
+            "maxLitros": 78,
+            "marca": "Coleman, Edwards and Watkins",
+            "precio": 36471,
+            "anio": 2018,
+            "tipo": "Camion",
+            "numeroPuertas": 2
+        },
+        "cliente": {
+            "nombre": "Melinda Allen",
+            "rut": "4758495-5"
+        },
+        "id": 4420
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 4546,
+            "numeroRuedas": 2,
+            "tipoCombustible": "Gas",
+            "maxLitros": 44,
+            "marca": "Patton, Thompson and Ward",
+            "precio": 46601,
             "anio": 1995,
             "tipo": "Moto"
         },
         "cliente": {
-            "nombre": "Cliente_3",
-            "rut": "37962363-1"
-        }
+            "nombre": "Scott Morris",
+            "rut": "1566547-5"
+        },
+        "id": 2900
     },
     {
-        "id": 70,
         "vehiculo": {
-            "numeroMotor": 5451,
-            "numeroRuedas": 2,
+            "numeroMotor": 2932,
+            "numeroRuedas": 4,
             "tipoCombustible": "Electrico",
-            "maxLitros": 25,
-            "marca": "Kawasaki",
-            "precio": 13000000,
-            "anio": 2003,
-            "tipo": "Moto"
+            "maxLitros": 74,
+            "marca": "Lynch-Miller",
+            "precio": 27299,
+            "anio": 2005,
+            "tipo": "Auto",
+            "numeroPuertas": 3
         },
         "cliente": {
-            "nombre": "Cliente_2",
-            "rut": "57934682-1"
-        }
-    },
-    {
-        "id": 71,
-        "vehiculo": {
-            "numeroMotor": 8013,
-            "numeroRuedas": 6,
-            "tipoCombustible": "Gas",
-            "maxLitros": 258,
-            "marca": "Iveco",
-            "precio": 85000000,
-            "anio": 2011,
-            "numeroPuertas": 3,
-            "tipo": "Auto"
+            "nombre": "Melinda Allen",
+            "rut": "4758495-5"
         },
-        "cliente": {
-            "nombre": "Cliente_3",
-            "rut": "37962363-1"
-        }
+        "id": 2792
     },
     {
-        "id": 72,
         "vehiculo": {
-            "numeroMotor": 8031,
-            "numeroRuedas": 2,
-            "tipoCombustible": "Electrico",
-            "maxLitros": 30,
-            "marca": "Honda",
-            "precio": 15000000,
-            "anio": 1994,
-            "tipo": "Moto"
-        },
-        "cliente": {
-            "nombre": "Cliente_2",
-            "rut": "57934682-1"
-        }
-    },
-    {
-        "id": 73,
-        "vehiculo": {
-            "numeroMotor": 4861,
+            "numeroMotor": 3926,
             "numeroRuedas": 2,
             "tipoCombustible": "Gas",
-            "maxLitros": 26,
-            "marca": "Honda",
-            "precio": 15000000,
-            "anio": 2020,
+            "maxLitros": 48,
+            "marca": "Perry-Jones",
+            "precio": 28812,
+            "anio": 2006,
             "tipo": "Moto"
         },
         "cliente": {
-            "nombre": "Cliente_5",
-            "rut": "86314185-3"
-        }
+            "nombre": "Melinda Allen",
+            "rut": "4758495-5"
+        },
+        "id": 4301
     },
     {
-        "id": 74,
         "vehiculo": {
-            "numeroMotor": 1486,
+            "numeroMotor": 4351,
             "numeroRuedas": 2,
             "tipoCombustible": "Gasolina",
-            "maxLitros": 11,
-            "marca": "Kawasaki",
-            "precio": 13000000,
-            "anio": 2019,
-            "tipo": "Moto"
-        },
-        "cliente": {
-            "nombre": "Cliente_5",
-            "rut": "86314185-3"
-        }
-    },
-    {
-        "id": 75,
-        "vehiculo": {
-            "numeroMotor": 6524,
-            "numeroRuedas": 2,
-            "tipoCombustible": "Electrico",
-            "maxLitros": 18,
-            "marca": "KTM",
-            "precio": 5000000,
+            "maxLitros": 97,
+            "marca": "Orr-Brown",
+            "precio": 29649,
             "anio": 2018,
             "tipo": "Moto"
         },
         "cliente": {
-            "nombre": "Cliente_6",
-            "rut": "66773571-5"
-        }
+            "nombre": "Eric Obrien",
+            "rut": "20797041-2"
+        },
+        "id": 1027
     },
     {
-        "id": 76,
         "vehiculo": {
-            "numeroMotor": 8789,
+            "numeroMotor": 3263,
+            "numeroRuedas": 2,
+            "tipoCombustible": "Gasolina",
+            "maxLitros": 58,
+            "marca": "Oconnell, Collins and Reeves",
+            "precio": 12989,
+            "anio": 2008,
+            "tipo": "Moto"
+        },
+        "cliente": {
+            "nombre": "Joshua Quinn",
+            "rut": "5015798-8"
+        },
+        "id": 3932
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 9051,
             "numeroRuedas": 4,
             "tipoCombustible": "Electrico",
-            "maxLitros": 50,
-            "marca": "Honda",
-            "precio": 21000000,
-            "anio": 2008,
-            "numeroPuertas": 2,
-            "tipo": "Auto"
+            "maxLitros": 41,
+            "marca": "Contreras, Williams and Moore",
+            "precio": 13210,
+            "anio": 1998,
+            "tipo": "Camion",
+            "numeroPuertas": 4
         },
         "cliente": {
-            "nombre": "Cliente_5",
-            "rut": "86314185-3"
-        }
-    },
-    {
-        "id": 77,
-        "vehiculo": {
-            "numeroMotor": 5067,
-            "numeroRuedas": 4,
-            "tipoCombustible": "Gasolina",
-            "maxLitros": 78,
-            "marca": "Hyundai",
-            "precio": 16000000,
-            "anio": 2008,
-            "numeroPuertas": 4,
-            "tipo": "Auto"
+            "nombre": "Cynthia Bennett",
+            "rut": "2263710-5"
         },
-        "cliente": {
-            "nombre": "Cliente_7",
-            "rut": "97648033-4"
-        }
+        "id": 8426
     },
     {
-        "id": 78,
         "vehiculo": {
-            "numeroMotor": 7499,
+            "numeroMotor": 4862,
             "numeroRuedas": 4,
             "tipoCombustible": "Gas",
             "maxLitros": 56,
-            "marca": "Ford",
-            "precio": 17000000,
-            "anio": 1994,
-            "numeroPuertas": 5,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_4",
-            "rut": "80054381-K"
-        }
-    },
-    {
-        "id": 79,
-        "vehiculo": {
-            "numeroMotor": 4572,
-            "numeroRuedas": 18,
-            "tipoCombustible": "Gas",
-            "maxLitros": 232,
-            "marca": "Scania",
-            "precio": 95000000,
+            "marca": "Lamb-Davis",
+            "precio": 27127,
             "anio": 2014,
-            "numeroPuertas": 4,
-            "tipo": "Auto"
+            "tipo": "Auto",
+            "numeroPuertas": 3
         },
         "cliente": {
-            "nombre": "Cliente_3",
-            "rut": "37962363-1"
-        }
+            "nombre": "Eric Obrien",
+            "rut": "20797041-2"
+        },
+        "id": 1231
     },
     {
-        "id": 80,
         "vehiculo": {
-            "numeroMotor": 6297,
+            "numeroMotor": 6840,
             "numeroRuedas": 4,
             "tipoCombustible": "Gas",
-            "maxLitros": 40,
-            "marca": "Toyota",
-            "precio": 19000000,
-            "anio": 2002,
-            "numeroPuertas": 3,
-            "tipo": "Auto"
+            "maxLitros": 55,
+            "marca": "Boone and Sons",
+            "precio": 13049,
+            "anio": 2018,
+            "tipo": "Auto",
+            "numeroPuertas": 2
         },
         "cliente": {
-            "nombre": "Cliente_5",
-            "rut": "86314185-3"
-        }
+            "nombre": "Eric Obrien",
+            "rut": "20797041-2"
+        },
+        "id": 215
     },
     {
-        "id": 81,
         "vehiculo": {
-            "numeroMotor": 2505,
-            "numeroRuedas": 13,
-            "tipoCombustible": "Gas",
-            "maxLitros": 101,
-            "marca": "Isuzu",
-            "precio": 70000000,
-            "anio": 1999,
-            "numeroPuertas": 2,
-            "tipo": "Auto"
+            "numeroMotor": 8172,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Gasolina",
+            "maxLitros": 44,
+            "marca": "Jensen-Palmer",
+            "precio": 9025,
+            "anio": 1996,
+            "tipo": "Auto",
+            "numeroPuertas": 4
         },
         "cliente": {
-            "nombre": "Cliente_2",
-            "rut": "57934682-1"
-        }
+            "nombre": "Eric Obrien",
+            "rut": "20797041-2"
+        },
+        "id": 2280
     },
     {
-        "id": 82,
         "vehiculo": {
-            "numeroMotor": 7255,
-            "numeroRuedas": 15,
+            "numeroMotor": 8449,
+            "numeroRuedas": 2,
             "tipoCombustible": "Electrico",
-            "maxLitros": 280,
-            "marca": "Scania",
-            "precio": 95000000,
-            "anio": 2000,
-            "numeroPuertas": 2,
-            "tipo": "Auto"
+            "maxLitros": 76,
+            "marca": "Johnson, Robbins and Sharp",
+            "precio": 19798,
+            "anio": 2007,
+            "tipo": "Moto"
         },
         "cliente": {
-            "nombre": "Cliente_2",
-            "rut": "57934682-1"
-        }
+            "nombre": "Scott Morris",
+            "rut": "1566547-5"
+        },
+        "id": 6804
     },
     {
-        "id": 83,
         "vehiculo": {
-            "numeroMotor": 9466,
+            "numeroMotor": 4513,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Gas",
+            "maxLitros": 99,
+            "marca": "Chen-Diaz",
+            "precio": 12031,
+            "anio": 1990,
+            "tipo": "Auto",
+            "numeroPuertas": 4
+        },
+        "cliente": {
+            "nombre": "Whitney Anthony",
+            "rut": "20587367-4"
+        },
+        "id": 9949
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 5573,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Electrico",
+            "maxLitros": 47,
+            "marca": "Sullivan, Johnson and Landry",
+            "precio": 32048,
+            "anio": 2020,
+            "tipo": "Auto",
+            "numeroPuertas": 3
+        },
+        "cliente": {
+            "nombre": "Joshua Quinn",
+            "rut": "5015798-8"
+        },
+        "id": 32
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 1302,
+            "numeroRuedas": 2,
+            "tipoCombustible": "Gas",
+            "maxLitros": 90,
+            "marca": "Young-Mendoza",
+            "precio": 5043,
+            "anio": 1996,
+            "tipo": "Moto"
+        },
+        "cliente": {
+            "nombre": "Whitney Anthony",
+            "rut": "20587367-4"
+        },
+        "id": 7512
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 9816,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Gas",
+            "maxLitros": 85,
+            "marca": "Garcia-Kelly",
+            "precio": 28301,
+            "anio": 2021,
+            "tipo": "Camion",
+            "numeroPuertas": 4
+        },
+        "cliente": {
+            "nombre": "Cynthia Bennett",
+            "rut": "2263710-5"
+        },
+        "id": 7601
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 3727,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Gasolina",
+            "maxLitros": 74,
+            "marca": "Underwood LLC",
+            "precio": 20064,
+            "anio": 1992,
+            "tipo": "Camion",
+            "numeroPuertas": 4
+        },
+        "cliente": {
+            "nombre": "Scott Morris",
+            "rut": "1566547-5"
+        },
+        "id": 4225
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 6409,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Gas",
+            "maxLitros": 84,
+            "marca": "Perez and Sons",
+            "precio": 41377,
+            "anio": 2018,
+            "tipo": "Auto",
+            "numeroPuertas": 2
+        },
+        "cliente": {
+            "nombre": "Darren Hill",
+            "rut": "8651247-9"
+        },
+        "id": 3887
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 9670,
             "numeroRuedas": 4,
             "tipoCombustible": "Gas",
             "maxLitros": 77,
-            "marca": "Suzuki",
-            "precio": 12000000,
+            "marca": "Johnson-Chang",
+            "precio": 15475,
             "anio": 2021,
-            "numeroPuertas": 5,
-            "tipo": "Auto"
+            "tipo": "Auto",
+            "numeroPuertas": 5
         },
         "cliente": {
-            "nombre": "Cliente_3",
-            "rut": "37962363-1"
-        }
+            "nombre": "Joshua Quinn",
+            "rut": "5015798-8"
+        },
+        "id": 2917
     },
     {
-        "id": 84,
         "vehiculo": {
-            "numeroMotor": 2128,
+            "numeroMotor": 2654,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Gas",
+            "maxLitros": 63,
+            "marca": "Henry Group",
+            "precio": 11321,
+            "anio": 2018,
+            "tipo": "Camion",
+            "numeroPuertas": 2
+        },
+        "cliente": {
+            "nombre": "Melinda Allen",
+            "rut": "4758495-5"
+        },
+        "id": 7951
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 4673,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Gasolina",
+            "maxLitros": 63,
+            "marca": "Barnett, Williams and Bennett",
+            "precio": 43351,
+            "anio": 1995,
+            "tipo": "Camion",
+            "numeroPuertas": 3
+        },
+        "cliente": {
+            "nombre": "Melinda Allen",
+            "rut": "4758495-5"
+        },
+        "id": 7183
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 5878,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Gas",
+            "maxLitros": 88,
+            "marca": "Hernandez Group",
+            "precio": 42917,
+            "anio": 2005,
+            "tipo": "Auto",
+            "numeroPuertas": 5
+        },
+        "cliente": {
+            "nombre": "Darren Hill",
+            "rut": "8651247-9"
+        },
+        "id": 3280
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 9624,
             "numeroRuedas": 2,
-            "tipoCombustible": "Electrico",
-            "maxLitros": 15,
-            "marca": "Suzuki",
-            "precio": 8000000,
-            "anio": 1991,
+            "tipoCombustible": "Gasolina",
+            "maxLitros": 86,
+            "marca": "Stokes-Davis",
+            "precio": 29414,
+            "anio": 2014,
             "tipo": "Moto"
         },
         "cliente": {
-            "nombre": "Cliente_7",
-            "rut": "97648033-4"
-        }
+            "nombre": "Cynthia Bennett",
+            "rut": "2263710-5"
+        },
+        "id": 465
     },
     {
-        "id": 85,
         "vehiculo": {
-            "numeroMotor": 7373,
+            "numeroMotor": 9467,
             "numeroRuedas": 4,
-            "tipoCombustible": "Gas",
-            "maxLitros": 51,
-            "marca": "Hyundai",
-            "precio": 16000000,
-            "anio": 2007,
-            "numeroPuertas": 5,
-            "tipo": "Auto"
+            "tipoCombustible": "Gasolina",
+            "maxLitros": 71,
+            "marca": "Vincent-Brown",
+            "precio": 25560,
+            "anio": 1999,
+            "tipo": "Auto",
+            "numeroPuertas": 4
         },
         "cliente": {
-            "nombre": "Cliente_1",
-            "rut": "92879183-9"
-        }
+            "nombre": "Darren Hill",
+            "rut": "8651247-9"
+        },
+        "id": 4516
     },
     {
-        "id": 86,
         "vehiculo": {
-            "numeroMotor": 5946,
+            "numeroMotor": 9574,
+            "numeroRuedas": 2,
+            "tipoCombustible": "Gasolina",
+            "maxLitros": 80,
+            "marca": "Nguyen, Brooks and Moore",
+            "precio": 9675,
+            "anio": 1995,
+            "tipo": "Moto"
+        },
+        "cliente": {
+            "nombre": "Scott Morris",
+            "rut": "1566547-5"
+        },
+        "id": 1368
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 9250,
             "numeroRuedas": 4,
             "tipoCombustible": "Gas",
+            "maxLitros": 40,
+            "marca": "Jones Group",
+            "precio": 29164,
+            "anio": 2010,
+            "tipo": "Auto",
+            "numeroPuertas": 2
+        },
+        "cliente": {
+            "nombre": "Melinda Allen",
+            "rut": "4758495-5"
+        },
+        "id": 8353
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 8396,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Electrico",
             "maxLitros": 59,
-            "marca": "Hyundai",
-            "precio": 16000000,
-            "anio": 1991,
-            "numeroPuertas": 5,
-            "tipo": "Auto"
+            "marca": "Gillespie, Davis and Rose",
+            "precio": 48909,
+            "anio": 2006,
+            "tipo": "Auto",
+            "numeroPuertas": 5
         },
         "cliente": {
-            "nombre": "Cliente_6",
-            "rut": "66773571-5"
-        }
-    },
-    {
-        "id": 87,
-        "vehiculo": {
-            "numeroMotor": 2039,
-            "numeroRuedas": 4,
-            "tipoCombustible": "Gasolina",
-            "maxLitros": 79,
-            "marca": "Toyota",
-            "precio": 19000000,
-            "anio": 2023,
-            "numeroPuertas": 5,
-            "tipo": "Auto"
+            "nombre": "Joshua Quinn",
+            "rut": "5015798-8"
         },
-        "cliente": {
-            "nombre": "Cliente_7",
-            "rut": "97648033-4"
-        }
+        "id": 144
     },
     {
-        "id": 88,
         "vehiculo": {
-            "numeroMotor": 1697,
-            "numeroRuedas": 4,
-            "tipoCombustible": "Gasolina",
-            "maxLitros": 41,
-            "marca": "Honda",
-            "precio": 21000000,
-            "anio": 2004,
-            "numeroPuertas": 5,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_1",
-            "rut": "92879183-9"
-        }
-    },
-    {
-        "id": 89,
-        "vehiculo": {
-            "numeroMotor": 8436,
-            "numeroRuedas": 18,
-            "tipoCombustible": "Gasolina",
-            "maxLitros": 182,
-            "marca": "Isuzu",
-            "precio": 70000000,
-            "anio": 1994,
-            "numeroPuertas": 2,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_4",
-            "rut": "80054381-K"
-        }
-    },
-    {
-        "id": 90,
-        "vehiculo": {
-            "numeroMotor": 2950,
-            "numeroRuedas": 8,
-            "tipoCombustible": "Gas",
-            "maxLitros": 288,
-            "marca": "Volvo",
-            "precio": 100000000,
-            "anio": 2011,
-            "numeroPuertas": 3,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_4",
-            "rut": "80054381-K"
-        }
-    },
-    {
-        "id": 91,
-        "vehiculo": {
-            "numeroMotor": 8350,
+            "numeroMotor": 1932,
             "numeroRuedas": 2,
             "tipoCombustible": "Electrico",
-            "maxLitros": 19,
-            "marca": "Honda",
-            "precio": 15000000,
-            "anio": 1993,
+            "maxLitros": 80,
+            "marca": "Padilla Ltd",
+            "precio": 37505,
+            "anio": 1995,
             "tipo": "Moto"
         },
         "cliente": {
-            "nombre": "Cliente_3",
-            "rut": "37962363-1"
-        }
+            "nombre": "Darren Hill",
+            "rut": "8651247-9"
+        },
+        "id": 5480
     },
     {
-        "id": 92,
         "vehiculo": {
-            "numeroMotor": 7993,
+            "numeroMotor": 4470,
+            "numeroRuedas": 2,
+            "tipoCombustible": "Gas",
+            "maxLitros": 91,
+            "marca": "Ortega-Mccarthy",
+            "precio": 45652,
+            "anio": 2017,
+            "tipo": "Moto"
+        },
+        "cliente": {
+            "nombre": "Darren Hill",
+            "rut": "8651247-9"
+        },
+        "id": 1246
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 8790,
+            "numeroRuedas": 2,
+            "tipoCombustible": "Electrico",
+            "maxLitros": 78,
+            "marca": "Harmon-Fuller",
+            "precio": 17084,
+            "anio": 2020,
+            "tipo": "Moto"
+        },
+        "cliente": {
+            "nombre": "Joshua Quinn",
+            "rut": "5015798-8"
+        },
+        "id": 5968
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 5716,
+            "numeroRuedas": 2,
+            "tipoCombustible": "Gasolina",
+            "maxLitros": 51,
+            "marca": "Johnson-Brown",
+            "precio": 5494,
+            "anio": 2014,
+            "tipo": "Moto"
+        },
+        "cliente": {
+            "nombre": "Whitney Anthony",
+            "rut": "20587367-4"
+        },
+        "id": 3756
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 9857,
+            "numeroRuedas": 2,
+            "tipoCombustible": "Gasolina",
+            "maxLitros": 61,
+            "marca": "Torres-Williams",
+            "precio": 16170,
+            "anio": 2003,
+            "tipo": "Moto"
+        },
+        "cliente": {
+            "nombre": "Darren Hill",
+            "rut": "8651247-9"
+        },
+        "id": 7704
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 5505,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Gas",
+            "maxLitros": 70,
+            "marca": "Joyce, Calderon and Graham",
+            "precio": 20811,
+            "anio": 1992,
+            "tipo": "Camion",
+            "numeroPuertas": 4
+        },
+        "cliente": {
+            "nombre": "Darren Hill",
+            "rut": "8651247-9"
+        },
+        "id": 9031
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 5373,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Gas",
+            "maxLitros": 80,
+            "marca": "Lara LLC",
+            "precio": 37289,
+            "anio": 2000,
+            "tipo": "Camion",
+            "numeroPuertas": 3
+        },
+        "cliente": {
+            "nombre": "Eric Obrien",
+            "rut": "20797041-2"
+        },
+        "id": 913
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 5770,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Gasolina",
+            "maxLitros": 42,
+            "marca": "Contreras-Ruiz",
+            "precio": 41318,
+            "anio": 1998,
+            "tipo": "Auto",
+            "numeroPuertas": 2
+        },
+        "cliente": {
+            "nombre": "Darren Hill",
+            "rut": "8651247-9"
+        },
+        "id": 5001
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 8375,
+            "numeroRuedas": 2,
+            "tipoCombustible": "Gas",
+            "maxLitros": 55,
+            "marca": "Hicks, Brown and Meyer",
+            "precio": 47046,
+            "anio": 1994,
+            "tipo": "Moto"
+        },
+        "cliente": {
+            "nombre": "Darren Hill",
+            "rut": "8651247-9"
+        },
+        "id": 656
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 5737,
+            "numeroRuedas": 2,
+            "tipoCombustible": "Electrico",
+            "maxLitros": 58,
+            "marca": "Sandoval, Waters and Ross",
+            "precio": 25352,
+            "anio": 1992,
+            "tipo": "Moto"
+        },
+        "cliente": {
+            "nombre": "Joshua Quinn",
+            "rut": "5015798-8"
+        },
+        "id": 8004
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 7174,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Electrico",
+            "maxLitros": 85,
+            "marca": "Woodard-Mckinney",
+            "precio": 49720,
+            "anio": 2006,
+            "tipo": "Auto",
+            "numeroPuertas": 4
+        },
+        "cliente": {
+            "nombre": "Cynthia Bennett",
+            "rut": "2263710-5"
+        },
+        "id": 8125
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 1447,
+            "numeroRuedas": 2,
+            "tipoCombustible": "Gas",
+            "maxLitros": 85,
+            "marca": "Alvarado, Patel and Hawkins",
+            "precio": 19574,
+            "anio": 2001,
+            "tipo": "Moto"
+        },
+        "cliente": {
+            "nombre": "Scott Morris",
+            "rut": "1566547-5"
+        },
+        "id": 1591
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 2948,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Gasolina",
+            "maxLitros": 75,
+            "marca": "Fuller-Pace",
+            "precio": 34957,
+            "anio": 2015,
+            "tipo": "Auto",
+            "numeroPuertas": 5
+        },
+        "cliente": {
+            "nombre": "Scott Morris",
+            "rut": "1566547-5"
+        },
+        "id": 5034
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 6755,
+            "numeroRuedas": 2,
+            "tipoCombustible": "Gasolina",
+            "maxLitros": 69,
+            "marca": "Aguilar, Holden and Herman",
+            "precio": 11476,
+            "anio": 2015,
+            "tipo": "Moto"
+        },
+        "cliente": {
+            "nombre": "Cynthia Bennett",
+            "rut": "2263710-5"
+        },
+        "id": 8573
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 7202,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Gas",
+            "maxLitros": 98,
+            "marca": "Davis-Lee",
+            "precio": 8316,
+            "anio": 1994,
+            "tipo": "Auto",
+            "numeroPuertas": 5
+        },
+        "cliente": {
+            "nombre": "Joshua Quinn",
+            "rut": "5015798-8"
+        },
+        "id": 2910
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 1785,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Gasolina",
+            "maxLitros": 65,
+            "marca": "Kim, Gardner and Mccall",
+            "precio": 43077,
+            "anio": 1995,
+            "tipo": "Auto",
+            "numeroPuertas": 3
+        },
+        "cliente": {
+            "nombre": "Eric Obrien",
+            "rut": "20797041-2"
+        },
+        "id": 240
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 8473,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Gasolina",
+            "maxLitros": 99,
+            "marca": "Kennedy, Martin and Miller",
+            "precio": 44379,
+            "anio": 2020,
+            "tipo": "Auto",
+            "numeroPuertas": 2
+        },
+        "cliente": {
+            "nombre": "Eric Obrien",
+            "rut": "20797041-2"
+        },
+        "id": 2417
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 4770,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Electrico",
+            "maxLitros": 75,
+            "marca": "Boyd, Smith and Henderson",
+            "precio": 38880,
+            "anio": 2001,
+            "tipo": "Camion",
+            "numeroPuertas": 5
+        },
+        "cliente": {
+            "nombre": "Melinda Allen",
+            "rut": "4758495-5"
+        },
+        "id": 2929
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 1709,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Electrico",
+            "maxLitros": 71,
+            "marca": "Murphy Group",
+            "precio": 29606,
+            "anio": 2013,
+            "tipo": "Camion",
+            "numeroPuertas": 5
+        },
+        "cliente": {
+            "nombre": "Eric Obrien",
+            "rut": "20797041-2"
+        },
+        "id": 3173
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 1250,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Electrico",
+            "maxLitros": 45,
+            "marca": "Buchanan-Rogers",
+            "precio": 41414,
+            "anio": 2014,
+            "tipo": "Camion",
+            "numeroPuertas": 3
+        },
+        "cliente": {
+            "nombre": "Joshua Quinn",
+            "rut": "5015798-8"
+        },
+        "id": 5782
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 2569,
+            "numeroRuedas": 2,
+            "tipoCombustible": "Electrico",
+            "maxLitros": 81,
+            "marca": "Moore-Blackburn",
+            "precio": 16043,
+            "anio": 2015,
+            "tipo": "Moto"
+        },
+        "cliente": {
+            "nombre": "Whitney Anthony",
+            "rut": "20587367-4"
+        },
+        "id": 9939
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 6751,
+            "numeroRuedas": 2,
+            "tipoCombustible": "Gas",
+            "maxLitros": 72,
+            "marca": "Oconnor-Travis",
+            "precio": 8060,
+            "anio": 2001,
+            "tipo": "Moto"
+        },
+        "cliente": {
+            "nombre": "Eric Obrien",
+            "rut": "20797041-2"
+        },
+        "id": 2940
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 3605,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Electrico",
+            "maxLitros": 80,
+            "marca": "Zuniga, Flynn and Barber",
+            "precio": 32243,
+            "anio": 1992,
+            "tipo": "Camion",
+            "numeroPuertas": 5
+        },
+        "cliente": {
+            "nombre": "Darren Hill",
+            "rut": "8651247-9"
+        },
+        "id": 576
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 6647,
+            "numeroRuedas": 2,
+            "tipoCombustible": "Gasolina",
+            "maxLitros": 61,
+            "marca": "Johnson Ltd",
+            "precio": 42229,
+            "anio": 2000,
+            "tipo": "Moto"
+        },
+        "cliente": {
+            "nombre": "Whitney Anthony",
+            "rut": "20587367-4"
+        },
+        "id": 5826
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 7784,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Gas",
+            "maxLitros": 100,
+            "marca": "Jacobs Ltd",
+            "precio": 21792,
+            "anio": 1998,
+            "tipo": "Camion",
+            "numeroPuertas": 5
+        },
+        "cliente": {
+            "nombre": "Joshua Quinn",
+            "rut": "5015798-8"
+        },
+        "id": 2783
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 4903,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Electrico",
+            "maxLitros": 100,
+            "marca": "Oneill-Barker",
+            "precio": 27553,
+            "anio": 2001,
+            "tipo": "Auto",
+            "numeroPuertas": 3
+        },
+        "cliente": {
+            "nombre": "Eric Obrien",
+            "rut": "20797041-2"
+        },
+        "id": 9746
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 2542,
+            "numeroRuedas": 2,
+            "tipoCombustible": "Gas",
+            "maxLitros": 97,
+            "marca": "Crawford, Walker and Yates",
+            "precio": 46142,
+            "anio": 2014,
+            "tipo": "Moto"
+        },
+        "cliente": {
+            "nombre": "Cynthia Bennett",
+            "rut": "2263710-5"
+        },
+        "id": 3559
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 8356,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Gas",
+            "maxLitros": 89,
+            "marca": "Woods Group",
+            "precio": 22550,
+            "anio": 1997,
+            "tipo": "Auto",
+            "numeroPuertas": 3
+        },
+        "cliente": {
+            "nombre": "Cynthia Bennett",
+            "rut": "2263710-5"
+        },
+        "id": 3629
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 8721,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Gasolina",
+            "maxLitros": 82,
+            "marca": "Young-White",
+            "precio": 7508,
+            "anio": 1991,
+            "tipo": "Camion",
+            "numeroPuertas": 2
+        },
+        "cliente": {
+            "nombre": "Darren Hill",
+            "rut": "8651247-9"
+        },
+        "id": 3936
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 2784,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Electrico",
+            "maxLitros": 43,
+            "marca": "Smith PLC",
+            "precio": 36569,
+            "anio": 2010,
+            "tipo": "Auto",
+            "numeroPuertas": 3
+        },
+        "cliente": {
+            "nombre": "Darren Hill",
+            "rut": "8651247-9"
+        },
+        "id": 7460
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 6097,
+            "numeroRuedas": 2,
+            "tipoCombustible": "Gasolina",
+            "maxLitros": 90,
+            "marca": "Thomas, Aguilar and Jackson",
+            "precio": 49868,
+            "anio": 2007,
+            "tipo": "Moto"
+        },
+        "cliente": {
+            "nombre": "Whitney Anthony",
+            "rut": "20587367-4"
+        },
+        "id": 4624
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 3092,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Electrico",
+            "maxLitros": 91,
+            "marca": "Brown LLC",
+            "precio": 43300,
+            "anio": 2011,
+            "tipo": "Camion",
+            "numeroPuertas": 2
+        },
+        "cliente": {
+            "nombre": "Melinda Allen",
+            "rut": "4758495-5"
+        },
+        "id": 7279
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 6534,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Electrico",
+            "maxLitros": 46,
+            "marca": "Patel LLC",
+            "precio": 13857,
+            "anio": 2000,
+            "tipo": "Auto",
+            "numeroPuertas": 2
+        },
+        "cliente": {
+            "nombre": "Cynthia Bennett",
+            "rut": "2263710-5"
+        },
+        "id": 3526
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 6607,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Electrico",
+            "maxLitros": 97,
+            "marca": "Blackburn-Hahn",
+            "precio": 26616,
+            "anio": 2017,
+            "tipo": "Camion",
+            "numeroPuertas": 5
+        },
+        "cliente": {
+            "nombre": "Darren Hill",
+            "rut": "8651247-9"
+        },
+        "id": 630
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 5627,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Gasolina",
+            "maxLitros": 72,
+            "marca": "Solis Group",
+            "precio": 36382,
+            "anio": 2011,
+            "tipo": "Camion",
+            "numeroPuertas": 4
+        },
+        "cliente": {
+            "nombre": "Cynthia Bennett",
+            "rut": "2263710-5"
+        },
+        "id": 9907
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 1032,
+            "numeroRuedas": 2,
+            "tipoCombustible": "Gasolina",
+            "maxLitros": 67,
+            "marca": "Johnson-Robbins",
+            "precio": 19931,
+            "anio": 2022,
+            "tipo": "Moto"
+        },
+        "cliente": {
+            "nombre": "Cynthia Bennett",
+            "rut": "2263710-5"
+        },
+        "id": 1339
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 1598,
+            "numeroRuedas": 2,
+            "tipoCombustible": "Gasolina",
+            "maxLitros": 97,
+            "marca": "Mueller-Hernandez",
+            "precio": 13468,
+            "anio": 1990,
+            "tipo": "Moto"
+        },
+        "cliente": {
+            "nombre": "Whitney Anthony",
+            "rut": "20587367-4"
+        },
+        "id": 5377
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 4175,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Gas",
+            "maxLitros": 95,
+            "marca": "Lang-Smith",
+            "precio": 15041,
+            "anio": 1991,
+            "tipo": "Camion",
+            "numeroPuertas": 4
+        },
+        "cliente": {
+            "nombre": "Darren Hill",
+            "rut": "8651247-9"
+        },
+        "id": 2460
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 6332,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Gas",
+            "maxLitros": 67,
+            "marca": "Williams-Guerra",
+            "precio": 17296,
+            "anio": 2003,
+            "tipo": "Auto",
+            "numeroPuertas": 5
+        },
+        "cliente": {
+            "nombre": "Eric Obrien",
+            "rut": "20797041-2"
+        },
+        "id": 1844
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 6447,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Gasolina",
+            "maxLitros": 59,
+            "marca": "Carlson-Beck",
+            "precio": 6794,
+            "anio": 1993,
+            "tipo": "Auto",
+            "numeroPuertas": 2
+        },
+        "cliente": {
+            "nombre": "Joshua Quinn",
+            "rut": "5015798-8"
+        },
+        "id": 2830
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 2805,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Electrico",
+            "maxLitros": 93,
+            "marca": "Ramirez, King and Mcclain",
+            "precio": 35510,
+            "anio": 2008,
+            "tipo": "Auto",
+            "numeroPuertas": 3
+        },
+        "cliente": {
+            "nombre": "Whitney Anthony",
+            "rut": "20587367-4"
+        },
+        "id": 5473
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 5170,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Gasolina",
+            "maxLitros": 61,
+            "marca": "Long-Carpenter",
+            "precio": 20407,
+            "anio": 2006,
+            "tipo": "Auto",
+            "numeroPuertas": 3
+        },
+        "cliente": {
+            "nombre": "Darren Hill",
+            "rut": "8651247-9"
+        },
+        "id": 784
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 1737,
+            "numeroRuedas": 2,
+            "tipoCombustible": "Gas",
+            "maxLitros": 69,
+            "marca": "Collins LLC",
+            "precio": 13641,
+            "anio": 2008,
+            "tipo": "Moto"
+        },
+        "cliente": {
+            "nombre": "Whitney Anthony",
+            "rut": "20587367-4"
+        },
+        "id": 8030
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 6829,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Gasolina",
+            "maxLitros": 81,
+            "marca": "Martin, Luna and Miller",
+            "precio": 29444,
+            "anio": 2020,
+            "tipo": "Camion",
+            "numeroPuertas": 5
+        },
+        "cliente": {
+            "nombre": "Melinda Allen",
+            "rut": "4758495-5"
+        },
+        "id": 2715
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 3720,
+            "numeroRuedas": 2,
+            "tipoCombustible": "Gas",
+            "maxLitros": 57,
+            "marca": "Bolton, Owens and Edwards",
+            "precio": 25164,
+            "anio": 2006,
+            "tipo": "Moto"
+        },
+        "cliente": {
+            "nombre": "Scott Morris",
+            "rut": "1566547-5"
+        },
+        "id": 2284
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 3219,
             "numeroRuedas": 4,
             "tipoCombustible": "Electrico",
             "maxLitros": 53,
-            "marca": "Honda",
-            "precio": 21000000,
-            "anio": 2023,
-            "numeroPuertas": 2,
-            "tipo": "Auto"
+            "marca": "Bell, Russo and Price",
+            "precio": 9177,
+            "anio": 2019,
+            "tipo": "Camion",
+            "numeroPuertas": 5
         },
         "cliente": {
-            "nombre": "Cliente_5",
-            "rut": "86314185-3"
-        }
+            "nombre": "Scott Morris",
+            "rut": "1566547-5"
+        },
+        "id": 3400
     },
     {
-        "id": 93,
         "vehiculo": {
-            "numeroMotor": 6842,
+            "numeroMotor": 2085,
             "numeroRuedas": 4,
             "tipoCombustible": "Gas",
-            "maxLitros": 69,
-            "marca": "Ford",
-            "precio": 17000000,
+            "maxLitros": 77,
+            "marca": "Ibarra, Harris and Norton",
+            "precio": 46082,
+            "anio": 2009,
+            "tipo": "Camion",
+            "numeroPuertas": 5
+        },
+        "cliente": {
+            "nombre": "Eric Obrien",
+            "rut": "20797041-2"
+        },
+        "id": 4219
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 1526,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Electrico",
+            "maxLitros": 80,
+            "marca": "Hill Inc",
+            "precio": 19134,
             "anio": 1998,
-            "numeroPuertas": 4,
-            "tipo": "Auto"
+            "tipo": "Auto",
+            "numeroPuertas": 4
         },
         "cliente": {
-            "nombre": "Cliente_4",
-            "rut": "80054381-K"
-        }
+            "nombre": "Whitney Anthony",
+            "rut": "20587367-4"
+        },
+        "id": 6857
     },
     {
-        "id": 94,
         "vehiculo": {
-            "numeroMotor": 4538,
+            "numeroMotor": 2749,
             "numeroRuedas": 4,
             "tipoCombustible": "Gas",
-            "maxLitros": 61,
-            "marca": "Chevrolet",
-            "precio": 18000000,
-            "anio": 1996,
-            "numeroPuertas": 3,
-            "tipo": "Auto"
+            "maxLitros": 92,
+            "marca": "Boyd-Williams",
+            "precio": 12012,
+            "anio": 2002,
+            "tipo": "Auto",
+            "numeroPuertas": 2
         },
         "cliente": {
-            "nombre": "Cliente_5",
-            "rut": "86314185-3"
-        }
+            "nombre": "Darren Hill",
+            "rut": "8651247-9"
+        },
+        "id": 6675
     },
     {
-        "id": 95,
         "vehiculo": {
-            "numeroMotor": 1993,
+            "numeroMotor": 1018,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Electrico",
+            "maxLitros": 52,
+            "marca": "Rowland-Davis",
+            "precio": 42582,
+            "anio": 1994,
+            "tipo": "Auto",
+            "numeroPuertas": 5
+        },
+        "cliente": {
+            "nombre": "Scott Morris",
+            "rut": "1566547-5"
+        },
+        "id": 416
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 8988,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Electrico",
+            "maxLitros": 100,
+            "marca": "Hansen-Miller",
+            "precio": 14508,
+            "anio": 1992,
+            "tipo": "Auto",
+            "numeroPuertas": 4
+        },
+        "cliente": {
+            "nombre": "Eric Obrien",
+            "rut": "20797041-2"
+        },
+        "id": 9613
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 9266,
+            "numeroRuedas": 2,
+            "tipoCombustible": "Gasolina",
+            "maxLitros": 86,
+            "marca": "Wells-Moreno",
+            "precio": 41640,
+            "anio": 2003,
+            "tipo": "Moto"
+        },
+        "cliente": {
+            "nombre": "Scott Morris",
+            "rut": "1566547-5"
+        },
+        "id": 2223
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 8919,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Electrico",
+            "maxLitros": 47,
+            "marca": "Jackson Group",
+            "precio": 20810,
+            "anio": 1994,
+            "tipo": "Auto",
+            "numeroPuertas": 2
+        },
+        "cliente": {
+            "nombre": "Cynthia Bennett",
+            "rut": "2263710-5"
+        },
+        "id": 6783
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 2285,
             "numeroRuedas": 4,
             "tipoCombustible": "Gasolina",
-            "maxLitros": 59,
-            "marca": "Toyota",
-            "precio": 19000000,
+            "maxLitros": 62,
+            "marca": "Wheeler-Harmon",
+            "precio": 41762,
             "anio": 2010,
-            "numeroPuertas": 4,
-            "tipo": "Auto"
+            "tipo": "Camion",
+            "numeroPuertas": 5
         },
         "cliente": {
-            "nombre": "Cliente_2",
-            "rut": "57934682-1"
-        }
+            "nombre": "Eric Obrien",
+            "rut": "20797041-2"
+        },
+        "id": 6837
     },
     {
-        "id": 96,
         "vehiculo": {
-            "numeroMotor": 6156,
+            "numeroMotor": 3774,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Gasolina",
+            "maxLitros": 47,
+            "marca": "Grant Group",
+            "precio": 11120,
+            "anio": 2006,
+            "tipo": "Auto",
+            "numeroPuertas": 4
+        },
+        "cliente": {
+            "nombre": "Darren Hill",
+            "rut": "8651247-9"
+        },
+        "id": 745
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 5700,
+            "numeroRuedas": 4,
+            "tipoCombustible": "Electrico",
+            "maxLitros": 89,
+            "marca": "Conway, Crosby and Larson",
+            "precio": 15398,
+            "anio": 2000,
+            "tipo": "Auto",
+            "numeroPuertas": 3
+        },
+        "cliente": {
+            "nombre": "Joshua Quinn",
+            "rut": "5015798-8"
+        },
+        "id": 8454
+    },
+    {
+        "vehiculo": {
+            "numeroMotor": 2102,
             "numeroRuedas": 2,
             "tipoCombustible": "Gasolina",
-            "maxLitros": 14,
-            "marca": "Kawasaki",
-            "precio": 13000000,
-            "anio": 2010,
+            "maxLitros": 74,
+            "marca": "Lee, Perkins and Ramirez",
+            "precio": 30578,
+            "anio": 2019,
             "tipo": "Moto"
         },
         "cliente": {
-            "nombre": "Cliente_1",
-            "rut": "92879183-9"
-        }
-    },
-    {
-        "id": 97,
-        "vehiculo": {
-            "numeroMotor": 3612,
-            "numeroRuedas": 2,
-            "tipoCombustible": "Electrico",
-            "maxLitros": 22,
-            "marca": "Honda",
-            "precio": 15000000,
-            "anio": 2011,
-            "tipo": "Moto"
+            "nombre": "Whitney Anthony",
+            "rut": "20587367-4"
         },
-        "cliente": {
-            "nombre": "Cliente_1",
-            "rut": "92879183-9"
-        }
-    },
-    {
-        "id": 98,
-        "vehiculo": {
-            "numeroMotor": 4128,
-            "numeroRuedas": 10,
-            "tipoCombustible": "Electrico",
-            "maxLitros": 102,
-            "marca": "MAN",
-            "precio": 105000000,
-            "anio": 1997,
-            "numeroPuertas": 3,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_4",
-            "rut": "80054381-K"
-        }
-    },
-    {
-        "id": 99,
-        "vehiculo": {
-            "numeroMotor": 6315,
-            "numeroRuedas": 2,
-            "tipoCombustible": "Electrico",
-            "maxLitros": 24,
-            "marca": "Kawasaki",
-            "precio": 13000000,
-            "anio": 2012,
-            "tipo": "Moto"
-        },
-        "cliente": {
-            "nombre": "Cliente_3",
-            "rut": "37962363-1"
-        }
-    },
-    {
-        "id": 100,
-        "vehiculo": {
-            "numeroMotor": 3612,
-            "numeroRuedas": 4,
-            "tipoCombustible": "Gas",
-            "maxLitros": 42,
-            "marca": "Honda",
-            "precio": 21000000,
-            "anio": 2023,
-            "numeroPuertas": 4,
-            "tipo": "Auto"
-        },
-        "cliente": {
-            "nombre": "Cliente_3",
-            "rut": "37962363-1"
-        }
+        "id": 4308
     }
 ]
