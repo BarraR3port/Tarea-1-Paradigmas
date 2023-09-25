@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
-using namespace std;
 #include <string>
+using namespace std;
 
 class Cliente
 {
@@ -10,7 +10,7 @@ private:
     string rut;
 
 public:
-    Cliente(const string &nombre, const string &rut);
+    Cliente( const string &nombre, const string &rut);
     string getNombre() const;
     string getRut() const;
     void setNombre(const string &nombre);

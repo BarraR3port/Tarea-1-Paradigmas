@@ -12,11 +12,6 @@ int Camion::getNumeroPuertas() const
     return numeroPuertas;
 }
 
-void Camion::setNumeroPuertas(int numeroPuertas)
-{
-    this->numeroPuertas = numeroPuertas;
-}
-
 void Camion::imprimir()
 {
     cout << "-------------------" << endl;
@@ -56,4 +51,9 @@ long long Camion::calcularPrecioFinal()
     }
 
     return static_cast<long long>(precioFinal); // Convertimos a long long antes de devolver
+}
+
+string Camion::getTipo()
+{
+    return "Camion";
 }

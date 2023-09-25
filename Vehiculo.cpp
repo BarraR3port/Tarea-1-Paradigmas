@@ -5,6 +5,10 @@ using namespace std;
 
 Vehiculo::Vehiculo(int numeroMotor, int numeroRuedas, TipoCombustible tipoCombustible, int maxLitros, string marca, long long precio, int anio) : numeroMotor(numeroMotor), numeroRuedas(numeroRuedas), tipoCombustible(tipoCombustible), maxLitros(maxLitros), marca(marca), precio(precio), anio(anio) {}
 
+Vehiculo::~Vehiculo()
+{
+}
+
 int Vehiculo::getNumeroMotor() const
 {
     return numeroMotor;
@@ -40,40 +44,6 @@ int Vehiculo::getAnio() const
     return anio;
 }
 
-void Vehiculo::setNumeroMotor(int numeroMotor)
-{
-    this->numeroMotor = numeroMotor;
-}
-
-void Vehiculo::setNumeroRuedas(int numeroRuedas)
-{
-    this->numeroRuedas = numeroRuedas;
-}
-
-void Vehiculo::setTipoCombustible(TipoCombustible tipoCombustible)
-{
-    this->tipoCombustible = tipoCombustible;
-}
-
-void Vehiculo::setMaxLitros(int maxLitros)
-{
-    this->maxLitros = maxLitros;
-}
-
-void Vehiculo::setMarca(string marca)
-{
-    this->marca = marca;
-}
-
-void Vehiculo::setPrecio(long long precio)
-{
-    this->precio = precio;
-}
-
-void Vehiculo::setAnio(int anio)
-{
-    this->anio = anio;
-}
 
 string Vehiculo::getTipoCombustibleString() const
 {
@@ -93,20 +63,4 @@ string Vehiculo::getTipoCombustibleString() const
     {
         return "Tipo de combustible no válido";
     }
-}
-
-void Vehiculo::imprimir()
-{
-    cout << "Numero de motor: " << numeroMotor << endl;
-    cout << "Numero de ruedas: " << numeroRuedas << endl;
-    cout << "Tipo de combustible: " << getTipoCombustibleString() << endl;
-    cout << "Maximo de litros: " << maxLitros << endl;
-    cout << "Marca: " << marca << endl;
-    cout << "Precio: " << precio << endl;
-    cout << "Anio: " << anio << endl;
-}
-
-long long Vehiculo::calcularPrecioFinal()
-{
-    return precio;
 }

@@ -47,3 +47,8 @@ long long Moto::calcularPrecioFinal()
 
     return static_cast<long long>(precioFinal); // Convertimos a long long antes de devolver
 }
+
+string Moto::getTipo()
+{
+    return "Moto";
+}

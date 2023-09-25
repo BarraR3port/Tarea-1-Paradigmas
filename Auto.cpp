@@ -1,6 +1,7 @@
 #include "Vehiculo.h"
 #include <iostream>
 #include "Auto.h"
+
 using namespace std;
 
 Auto::Auto(int numeroMotor, int numeroRuedas, TipoCombustible tipoCombustible, int maxLitros, string marca, long long precio, int anio, int numeroPuertas) : Vehiculo(numeroMotor, numeroRuedas, tipoCombustible, maxLitros, marca, precio, anio), numeroPuertas(numeroPuertas)
@@ -10,11 +11,6 @@ Auto::Auto(int numeroMotor, int numeroRuedas, TipoCombustible tipoCombustible, i
 int Auto::getNumeroPuertas() const
 {
     return numeroPuertas;
-}
-
-void Auto::setNumeroPuertas(int numeroPuertas)
-{
-    this->numeroPuertas = numeroPuertas;
 }
 
 void Auto::imprimir()
@@ -33,27 +29,25 @@ void Auto::imprimir()
 
 long long Auto::calcularPrecioFinal()
 {
-    double precioFinal = precio; // Empezamos con el precio base
+    long long precioFinal = this->precio;
 
-    // Descuentos basados en el anio de fabricación
-    if (anio < 2000)
-    {
-        precioFinal *= 0.50;
-    }
-    else if (anio >= 2000 && anio <= 2017)
-    {
-        precioFinal *= 0.70;
-    }
-    else if (anio > 2017)
-    {
+    // Aplicar descuentos por año de fabricación
+    if (anio < 2000) {
+        precioFinal *= 0.5;
+    } else if (anio >= 2000 && anio <= 2017) {
+        precioFinal *= 0.7;
+    } else {
         precioFinal *= 0.85;
     }
 
-    // Incremento basado en el tipo de combustible
-    if (tipoCombustible == TipoCombustible::Electrico || tipoCombustible == TipoCombustible::Gas)
-    {
-        precioFinal *= 1.20;
+    // Aumentar el precio si es eléctrico o a gas
+    if (tipoCombustible == TipoCombustible::Electrico || tipoCombustible == TipoCombustible::Gas) {
+        precioFinal *= 1.2;
     }
+    return precioFinal;
+}
 
-    return static_cast<long long>(precioFinal); // Convertimos a long long antes de devolver
+string Auto::getTipo()
+{
+    return "Auto";
 }

@@ -24,6 +24,8 @@ protected:
 public:
     Vehiculo(int numeroMotor, int numeroRuedas, TipoCombustible tipoCombustible, int maxLitros, std::string marca, long long precio, int anio);
 
+    virtual ~Vehiculo();
+
     int getNumeroMotor() const;
 
     int getNumeroRuedas() const;
@@ -40,21 +42,9 @@ public:
 
     int getAnio() const;
 
-    void setNumeroMotor(int numeroMotor);
-
-    void setNumeroRuedas(int numeroRuedas);
-
-    void setTipoCombustible(TipoCombustible tipoCombustible);
-
-    void setMaxLitros(int maxLitros);
-
-    void setMarca(std::string marca);
-
-    void setPrecio(long long precio);
-
-    void setAnio(int anio);
-
     virtual void imprimir() = 0;
 
-    long long calcularPrecioFinal();
+    virtual long long calcularPrecioFinal() = 0;
+
+    virtual string getTipo() = 0;
 };
