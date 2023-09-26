@@ -12,11 +12,13 @@ Es recomendado utilizar cmake, pero si no lo tiene instalado puede utilizar gcc.
 ### GCC
 
 `Shell`
+
 ```shell
 g++ -Wall -Wextra -g3 *.cpp -o output.exe ; .\output.exe
 ```
 
 `Bash`
+
 ```bash
 g++ -Wall -Wextra -g3 *.cpp -o output.exe && .\output.exe
 ```
@@ -24,10 +26,13 @@ g++ -Wall -Wextra -g3 *.cpp -o output.exe && .\output.exe
 ### CMAKE
 
 `Shell`
+
 ```shell
 cmake --build cmake-build-debug --target Tarea_1_Paradigmas -j 14 ; .\cmake-build-debug\Tarea_1_Paradigmas.exe
 ```
+
 `Bash`
+
 ```bash
 cmake --build cmake-build-debug --target Tarea_1_Paradigmas -j 14 && .\cmake-build-debug\Tarea_1_Paradigmas.exe
 ```
