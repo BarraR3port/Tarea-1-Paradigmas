@@ -642,7 +642,7 @@ void mostrarCantidadCliente(Cliente *cliente, string tipoDeVehiculo)
             }
         }
     }
-    const string vehiculoPlural = tipoDeVehiculo == "Camion" ? "nes" : "s";
+    const string vehiculoPlural = tipoDeVehiculo == "Camion" ? "es" : "s";
 
     if (totalCompras > 0)
     {
@@ -719,10 +719,12 @@ void menu(void)
     int opcion = 0;
     Cliente *cliente = NULL;
 
+    /*
     // TODO: TESTING Profe cuando vea esto, lo puede descomentar para poder cargar el archivo con 100 ventas para diferentes usuarios
     readAndCreateVehicles();
     cliente = &getOrCreateCliente("22222222-2", "Pedro");
     // TODO: TESTING
+    */
     while (opcion != 4)
     {
         if (cliente == NULL)
